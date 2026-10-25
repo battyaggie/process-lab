@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>V-model hub</title>
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+html,body{margin:0}
+[hidden]{display:none!important}
+img{max-width:100%}
+body{margin:0}
+
+/* Layout: one column; large numbered station tiles above one 16:9 player. Same look as the Claus exercise. */
+:root{
+  --bg:#eef1f4; --panel:#ffffff; --fg:#1b2631; --muted:#5b6876; --line:#cdd5dd;
+  --accent:#b8860b; --accent-fg:#ffffff; --done:#3b7d5a; --stage:#4d6073;
+  --display:"Barlow Semi Condensed","Arial Narrow",sans-serif; --body:"IBM Plex Sans",system-ui,sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#141b22; --panel:#1d2731; --fg:#e8edf2; --muted:#9aa8b6; --line:#33424f; --accent:#e0b52c; --accent-fg:#1b1a10; --done:#6fbf92; --stage:#4d6073; color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#141b22; --panel:#1d2731; --fg:#e8edf2; --muted:#9aa8b6; --line:#33424f; --accent:#e0b52c; --accent-fg:#1b1a10; --done:#6fbf92; --stage:#4d6073; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font-family:var(--body);font-size:16px;line-height:1.5;padding-block:20px 40px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.wrap{max-width:980px;margin:0 auto;display:flex;flex-direction:column;gap:18px}
+header{display:flex;flex-direction:column;gap:4px}
+.kicker{font-family:var(--display);font-weight:600;letter-spacing:.08em;text-transform:uppercase;font-size:14px;color:var(--accent)}
+h1{font-family:var(--display);font-weight:700;font-size:clamp(28px,5vw,40px);line-height:1.1;margin:0;text-wrap:balance}
+.lead{margin:0;color:var(--muted);max-width:62ch}
+.tiles{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:8px}
+.tile{font:inherit;color:inherit;background:var(--panel);border:1.5px solid var(--line);border-radius:6px;padding:10px 4px 8px;cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:2px;min-width:0}
+.tile .n{font-family:var(--display);font-weight:700;font-size:30px;line-height:1}
+.tile .s{font-size:12px;color:var(--muted)}
+.tile[aria-pressed="true"]{border-color:var(--accent);box-shadow:inset 0 0 0 1.5px var(--accent)}
+.tile.done .s{color:var(--done);font-weight:600}
+.tile:disabled{opacity:.55;cursor:not-allowed}
+.tile:focus-visible,.btn:focus-visible,.mode a:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.stage{position:relative;background:var(--stage);border-radius:8px;overflow:hidden;aspect-ratio:16/9;max-width:100%}
+.cols{display:grid;grid-template-columns:minmax(0,1fr);gap:18px}
+.cols.split{grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);align-items:start}
+@media (max-width:900px){.cols.split{grid-template-columns:minmax(0,1fr)}}
+.writer{display:flex;flex-direction:column;gap:10px;min-width:0}
+.writer[hidden]{display:none!important}
+#wf{width:100%;height:min(78vh,820px);min-height:520px;border:1.5px solid var(--line);border-radius:8px;background:#fff}
+.wrap.wide{max-width:1400px}
+.page{width:100%;height:auto;border:1.5px solid var(--line);border-radius:6px;background:#fff;display:block}
+video{width:100%;height:100%;display:block;background:#2b3743;object-fit:contain}
+.overlay{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(20,27,34,.45)}
+.overlay[hidden]{display:none!important}
+.btn{font-family:var(--display);font-weight:600;font-size:20px;background:var(--accent);color:var(--accent-fg);border:0;border-radius:6px;padding:12px 26px;cursor:pointer}
+.btn.quiet{background:transparent;color:var(--fg);border:1.5px solid var(--line);font-size:15px;padding:6px 12px}
+.bar{display:flex;gap:12px;align-items:center;flex-wrap:wrap;justify-content:space-between;min-height:44px}
+.bar p{margin:0;color:var(--muted);flex:1 1 260px;min-width:0}
+.mode{display:flex;gap:8px;flex-wrap:wrap}
+.mode a{font-family:var(--display);font-weight:600;font-size:16px;text-decoration:none;color:var(--fg);border:1.5px solid var(--line);border-radius:6px;padding:6px 12px}
+.mode a[aria-current="page"]{background:var(--fg);color:var(--bg);border-color:var(--fg)}
+.choose{background:var(--panel);border:1.5px solid var(--line);border-radius:8px;padding:20px;display:flex;flex-direction:column;gap:12px}
+.choose h2{font-family:var(--display);font-size:22px;margin:0}
+.choose a{color:var(--fg);text-decoration:none;border:1.5px solid var(--line);border-radius:6px;padding:12px 14px;display:block}
+.choose a b{font-family:var(--display);font-size:19px;display:block}
+.choose a span{color:var(--muted);font-size:14px}
+details#how{background:var(--panel);border:1.5px solid var(--line);border-radius:8px;padding:10px 16px;margin-top:8px;max-width:62ch}
+details#how summary{cursor:pointer;font-family:var(--display);font-weight:600;font-size:18px}
+details#how ol{margin:8px 0 4px;padding-left:22px;color:var(--fg)}
+details#how .more{margin:6px 0 0;font-size:14px}
+footer{display:flex;gap:12px;align-items:center;flex-wrap:wrap;color:var(--muted);font-size:13px}
+@media (max-width:520px){.tile .s{display:none}.tile .n{font-size:24px}.tiles{gap:5px}}
+</style>
+
+</head><body>
+<div class="wrap" id="app">
+  <header>
+    <div class="kicker" id="kicker">Mechatronic V-model</div>
+    <h1 id="title">Station videos</h1>
+    <p class="lead" id="lead"></p>
+    <details id="how" hidden><summary>How this part works</summary><ol id="howbody"></ol></details>
+  </header>
+  <section class="choose" id="choose" hidden>
+    <h2>Which part are you working on?</h2>
+    <a href="#vocab"><b>Part 1: learn the parts</b><span>The vocabulary sheet with the word box.</span></a>
+    <a href="#blind"><b>Part 2: describe what you see</b><span>One of you watches the videos once, the other takes notes.</span></a>
+    <a href="#review"><b>Part 3: write and check together</b><span>Write the description and replay the stations to check it.</span></a>
+      </section>
+  <section class="choose" id="role" hidden>
+    <h2>What is your job in this part?</h2>
+    <a href="#blind-hand"><b>I watch and describe</b><span>You see the videos. Tell your partner what happens.</span></a>
+    <a href="#blind-voice"><b>I listen and write</b><span>You do not see the videos. Take notes and write the description.</span></a>
+  </section>
+  <section id="sheet" hidden class="wrap" style="gap:14px">
+    <div class="bar"><p>Fill in the sheet on paper or in a document of your own. Open the PDF to print it or to save it.</p><a class="btn" id="pdf" href="/vmodel/sheet/v-model-vocabulary.pdf" target="_blank" rel="noopener" style="text-decoration:none">Open the sheet as PDF</a></div>
+    <img class="page" src="/vmodel/sheet/page-1.jpg" alt="Vocabulary sheet, page 1: picture of the development process with numbers, and word box">
+    <img class="page" src="/vmodel/sheet/page-2.jpg" alt="Vocabulary sheet, page 2: table with number, name and function">
+    <img class="page" src="/vmodel/sheet/page-3.jpg" alt="Vocabulary sheet, page 3: pictures of the five stations">
+  </section>
+  <div class="cols" id="cols">
+  <aside id="writer" hidden class="writer">
+    <div class="bar"><p id="wnote">Join with the class code your teacher gives you, then write your description here.</p>
+      <a class="btn quiet" id="wnew" href="https://collab-writing-app-battyaggie.vercel.app/join" target="_blank" rel="noopener" style="text-decoration:none">Open in new tab</a></div>
+    <iframe id="wf" title="Collaborative writing" allow="clipboard-read; clipboard-write"></iframe>
+  </aside>
+  <main id="player" hidden class="wrap" style="gap:14px">
+    <div class="tiles" id="tiles" role="group" aria-label="Stations"></div>
+    <div class="stage" id="stage">
+      <video id="v" playsinline preload="metadata" disablepictureinpicture></video>
+      <div class="overlay" id="ov"><button class="btn" id="go" type="button">Play station 1</button></div>
+    </div>
+    <div class="bar"><p id="hint"></p><button class="btn quiet" id="again" type="button" hidden>Play again</button></div>
+  </main>
+  </div>
+  <footer>
+    <nav class="mode" id="modes" aria-label="Part"></nav>
+    <span id="reset-wrap" hidden><button class="btn quiet" id="reset" type="button">Reset stations</button></span>
+  </footer>
+</div>
+
+<script>
+(function(){
+  var MODES={
+    vocab:{kicker:"Part 1 · Learn the parts",title:"Vocabulary sheet",sheet:true,
+      lead:"Work on the sheet first. Choose the right name from the word box for each number, then write in your own words what each part does. Do this before you start Part 2.",
+      hint:""},
+    blind:{kicker:"Part 2 · Describe what you see",title:"Watch and tell your partner",file:"plain",free:false,
+      lead:"Watch each station once. Tell your partner what happens while they take notes. Your partner does not look at the screen.",
+      hint:"Each station plays once and cannot be paused or skipped back."},
+    review:{kicker:"Part 3 · Write and check",title:"Write and check together",file:"plain",free:true,
+      lead:"Write the complete description together. Replay any station to check that your text covers everything.",
+      hint:"Replay and pause as often as you need."}
+  };
+  var N=5, mode=null, cur=0;
+  var $=function(i){return document.getElementById(i)};
+  var v=$("v"), ov=$("ov"), go=$("go"), again=$("again");
+  function store(k,val){try{if(val===undefined)return localStorage.getItem(k);localStorage.setItem(k,val)}catch(e){return null}}
+  function key(){return "vmodel-"+mode}
+  function doneSet(){try{return JSON.parse(store(key())||"[]")}catch(e){return []}}
+  var done=[];
+  function saveDone(){store(key(),JSON.stringify(done))}
+  function src(i){return "/vmodel/video/s"+(i+1)+"_"+MODES[mode].file+".mp4"}
+
+  function buildTiles(){
+    var t=$("tiles"); t.textContent="";
+    for(var i=0;i<N;i++){(function(i){
+      var b=document.createElement("button"); b.type="button"; b.className="tile"; b.id="t"+i;
+      var n=document.createElement("span"); n.className="n"; n.textContent=String(i+1);
+      var s=document.createElement("span"); s.className="s";
+      b.appendChild(n); b.appendChild(s);
+      b.addEventListener("click",function(){select(i)});
+      t.appendChild(b);
+    })(i)}
+  }
+  function paintTiles(){
+    for(var i=0;i<N;i++){
+      var b=$("t"+i), isDone=done.indexOf(i)>-1, m=MODES[mode];
+      b.classList.toggle("done",isDone);
+      b.setAttribute("aria-pressed",i===cur?"true":"false");
+      b.disabled=(!m.free && isDone && i!==cur);
+      b.lastChild.textContent=isDone?"watched":"not yet";
+      b.setAttribute("aria-label","Station "+(i+1)+(isDone?", watched":""));
+    }
+  }
+  function select(i){
+    cur=i; var m=MODES[mode]; v.pause();
+    v.src=src(i)+"#t=0.1"; v.load();
+    var isDone=done.indexOf(i)>-1;
+    v.controls=m.free;
+    ov.hidden=false; again.hidden=true;
+    if(!m.free && isDone){go.textContent="Station "+(i+1)+" already watched"; go.disabled=true}
+    else{go.disabled=false; go.textContent="Play station "+(i+1)}
+    paintTiles();
+  }
+  go.addEventListener("click",function(){
+    ov.hidden=true; var p=v.play(); if(p&&p.catch)p.catch(function(){ov.hidden=false});
+  });
+  again.addEventListener("click",function(){v.currentTime=0;again.hidden=true;v.play()});
+  v.addEventListener("ended",function(){
+    if(done.indexOf(cur)<0){done.push(cur);saveDone()}
+    paintTiles();
+    var m=MODES[mode];
+    if(m.free){again.hidden=false}
+    else{
+      var next=-1; for(var k=1;k<=N;k++){var j=(cur+k)%N; if(done.indexOf(j)<0){next=j;break}}
+      ov.hidden=false; go.disabled=true;
+      go.textContent=next<0?"All stations watched":"Station "+(cur+1)+" watched";
+      if(next>=0){setTimeout(function(){select(next)},1400)}
+    }
+  });
+  v.addEventListener("contextmenu",function(e){if(!MODES[mode].free)e.preventDefault()});
+  v.addEventListener("seeking",function(){ /* blind run: no skipping back */
+    if(!MODES[mode].free && v._last!==undefined && v.currentTime<v._last-0.5){v.currentTime=v._last}
+  });
+  v.addEventListener("timeupdate",function(){if(!MODES[mode].free)v._last=Math.max(v._last||0,v.currentTime)});
+  v.addEventListener("loadstart",function(){v._last=0});
+  v.addEventListener("pause",function(){ /* blind run: no pausing mid-clip */
+    if(!MODES[mode].free && !v.ended && v.currentTime>0 && v.currentTime<v.duration-0.2){ov.hidden=false;go.disabled=false;go.textContent="Continue station "+(cur+1)}
+  });
+
+  var resetArm=false;
+  $("reset").addEventListener("click",function(){
+    var b=$("reset");
+    if(!resetArm){resetArm=true;b.textContent="Click again to reset";setTimeout(function(){resetArm=false;b.textContent="Reset stations"},3500);return}
+    resetArm=false;b.textContent="Reset stations"; done=[]; saveDone(); select(0);
+  });
+
+  function modesNav(){
+    var nav=$("modes"); nav.textContent="";
+    [["vocab","Part 1"],["blind","Part 2"],["review","Part 3"]].forEach(function(p){
+      var a=document.createElement("a"); a.href="#"+p[0]; a.textContent=p[1];
+      if(p[0]===mode)a.setAttribute("aria-current","page");
+      nav.appendChild(a);
+    });
+  }
+  var WURL="https://collab-writing-app-battyaggie.vercel.app/join";
+  function setWriter(on){
+    var w=$("writer"); w.hidden=!on;
+    if(on && !$("wf").getAttribute("src")) $("wf").setAttribute("src",WURL);
+  }
+  var HOW={"vocab": ["Look at the picture of the development process. Each part has a number.", "Choose the right name from the word box for each number. Every name is used once.", "Write in your own words what each part does.", "Compare with your partner and with the station pictures on page 3."], "blind-role": ["Decide who watches (the hand) and who listens and writes (the voice).", "Choose your role below. The voice does not look at the hand's screen."], "blind-hand": ["Watch each station. It plays only once.", "Tell your partner what happens: what moves, where it goes, what changes.", "Use the names from Part 1."], "blind-voice": ["Do not look at your partner's screen.", "Join the writing area with the class code and a nickname.", "Take notes. Ask questions: What happens next? Where does it go? What is this part called?"], "review": ["Both of you join the writing area with the class code.", "Write one complete description together, from start to finish.", "Use the Part 1 names and connectors: first, then, after that, finally.", "Replay any station on the right to check your text. Then read it aloud once."]};
+  function showHow(key){
+    var d=$("how"), b=$("howbody"); b.textContent="";
+    var items=HOW[key]; if(!items){d.hidden=true;return}
+    items.forEach(function(t){var li=document.createElement("li");li.textContent=t;b.appendChild(li)});
+    d.hidden=false; d.open=(key==="vocab"||key==="blind-role");
+  }
+  function route(){
+    var raw=(location.hash||"").replace("#","");
+    var h=raw, view="";
+    if(raw==="blind-hand"||raw==="blind-voice"){h="blind";view=raw.split("-")[1]}
+    $("sheet").hidden=true; $("role").hidden=true; $("choose").hidden=true; $("player").hidden=true; setWriter(false);
+    $("cols").classList.remove("split"); $("app").classList.remove("wide");
+    try{v.pause()}catch(e){}
+    $("how").hidden=true;
+    if(!MODES[h]){
+      mode=null; $("choose").hidden=false;
+      $("kicker").textContent="Mechatronic V-model"; $("title").textContent="Describe a development process";
+      $("lead").textContent="Three parts. Your teacher tells you which one to open."; $("modes").textContent=""; $("reset-wrap").hidden=true; return;
+    }
+    mode=h; var m=MODES[h]; done=doneSet();
+    $("kicker").textContent=m.kicker; $("title").textContent=m.title; $("lead").textContent=m.lead; $("hint").textContent=m.hint;
+    $("reset-wrap").hidden=m.free; modesNav();
+    if(m.sheet){$("sheet").hidden=false;showHow("vocab");return}
+    if(h==="blind"&&!view){$("role").hidden=false;showHow("blind-role");return}
+    if(h==="blind"&&view==="voice"){ $("reset-wrap").hidden=true;
+      $("title").textContent="Listen and write"; $("lead").textContent="Your partner watches the clips and describes them. Take notes and write the description with your partner.";
+      $("wnote").textContent="Join with the class code your teacher gives you."; $("app").classList.add("wide"); setWriter(true); showHow("blind-voice"); return}
+    if(h==="blind"&&view==="hand"){ showHow("blind-hand");
+      $("lead").textContent="Watch each station once. Tell your partner what happens while they take notes. Your partner does not look at your screen."}
+    if(h==="review"){
+      $("app").classList.add("wide"); $("cols").classList.add("split"); $("wnote").textContent="Write and check your description here."; setWriter(true); showHow("review")}
+    $("player").hidden=false;
+    buildTiles();
+    var first=0; if(!m.free){for(var i=0;i<N;i++){if(done.indexOf(i)<0){first=i;break}}}
+    select(first);
+  }
+  window.addEventListener("hashchange",route);
+  route();
+})();
+</script>
+
+</body></html>
