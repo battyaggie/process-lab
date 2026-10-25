@@ -71,13 +71,16 @@ footer{display:flex;gap:12px;align-items:center;flex-wrap:wrap;color:var(--muted
     <div class="kicker" id="kicker">Mechatronic V-model</div>
     <h1 id="title">Station videos</h1>
     <p class="lead" id="lead"></p>
-    <details id="how" hidden><summary>How this part works</summary><ol id="howbody"></ol></details>
+    <details id="how" hidden><summary>How this part works</summary><ol id="howbody"></ol>
+      <p class="more"><a href="/vmodel/guide-students/">Full student guide</a></p></details>
   </header>
   <section class="choose" id="choose" hidden>
     <h2>Which part are you working on?</h2>
     <a href="#vocab"><b>Part 1: learn the parts</b><span>The vocabulary sheet with the word box.</span></a>
     <a href="#blind"><b>Part 2: describe what you see</b><span>One of you watches the videos once, the other takes notes.</span></a>
     <a href="#review"><b>Part 3: write and check together</b><span>Write the description and replay the stations to check it.</span></a>
+    <h2 style="margin-top:8px">Guides</h2>
+    <a href="/vmodel/guide-students/"><b>Student guide</b><span>What to do in each part, with useful language.</span></a>
       </section>
   <section class="choose" id="role" hidden>
     <h2>What is your job in this part?</h2>
@@ -107,6 +110,7 @@ footer{display:flex;gap:12px;align-items:center;flex-wrap:wrap;color:var(--muted
   </div>
   <footer>
     <nav class="mode" id="modes" aria-label="Part"></nav>
+    <a href="/vmodel/guide-students/" style="color:var(--muted)">Student guide</a>
     <span id="reset-wrap" hidden><button class="btn quiet" id="reset" type="button">Reset stations</button></span>
   </footer>
 </div>
