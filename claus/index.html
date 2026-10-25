@@ -80,9 +80,9 @@ footer{display:flex;gap:12px;align-items:center;flex-wrap:wrap;color:var(--muted
     <a href="#blind-voice"><b>I listen and write</b><span>You do not see the videos. Take notes and write the description.</span></a>
   </section>
   <section id="sheet" hidden class="wrap" style="gap:14px">
-    <div class="bar"><p>Fill in the sheet on paper or in a document of your own. Open the PDF to print it or to save it.</p><a class="btn" id="pdf" href="sheet/claus-vocabulary.pdf" target="_blank" rel="noopener" style="text-decoration:none">Open the sheet as PDF</a></div>
-    <img class="page" src="sheet/page-1.jpg" alt="Vocabulary sheet, page 1: picture of the plant with numbers, word box and table">
-    <img class="page" src="sheet/page-2.jpg" alt="Vocabulary sheet, page 2: pictures of the seven stations">
+    <div class="bar"><p>Fill in the sheet on paper or in a document of your own. Open the PDF to print it or to save it.</p><a class="btn" id="pdf" href="/claus/sheet/claus-vocabulary.pdf" target="_blank" rel="noopener" style="text-decoration:none">Open the sheet as PDF</a></div>
+    <img class="page" src="/claus/sheet/page-1.jpg" alt="Vocabulary sheet, page 1: picture of the plant with numbers, word box and table">
+    <img class="page" src="/claus/sheet/page-2.jpg" alt="Vocabulary sheet, page 2: pictures of the seven stations">
   </section>
   <div class="cols" id="cols">
   <aside id="writer" hidden class="writer">
@@ -126,7 +126,7 @@ footer{display:flex;gap:12px;align-items:center;flex-wrap:wrap;color:var(--muted
   function doneSet(){try{return JSON.parse(store(key())||"[]")}catch(e){return []}}
   var done=[];
   function saveDone(){store(key(),JSON.stringify(done))}
-  function src(i){return "video/s"+(i+1)+"_"+MODES[mode].file+".mp4"}
+  function src(i){return "/claus/video/s"+(i+1)+"_"+MODES[mode].file+".mp4"}
 
   function buildTiles(){
     var t=$("tiles"); t.textContent="";
