@@ -57,6 +57,10 @@ video{width:100%;height:100%;display:block;background:#2b3743;object-fit:contain
 .choose a{color:var(--fg);text-decoration:none;border:1.5px solid var(--line);border-radius:6px;padding:12px 14px;display:block}
 .choose a b{font-family:var(--display);font-size:19px;display:block}
 .choose a span{color:var(--muted);font-size:14px}
+details#how{background:var(--panel);border:1.5px solid var(--line);border-radius:8px;padding:10px 16px;margin-top:8px;max-width:62ch}
+details#how summary{cursor:pointer;font-family:var(--display);font-weight:600;font-size:18px}
+details#how ol{margin:8px 0 4px;padding-left:22px;color:var(--fg)}
+details#how .more{margin:6px 0 0;font-size:14px}
 footer{display:flex;gap:12px;align-items:center;flex-wrap:wrap;color:var(--muted);font-size:13px}
 @media (max-width:520px){.tile .s{display:none}.tile .n{font-size:24px}.tiles{gap:5px}}
 </style>
@@ -67,12 +71,17 @@ footer{display:flex;gap:12px;align-items:center;flex-wrap:wrap;color:var(--muted
     <div class="kicker" id="kicker">Claus process</div>
     <h1 id="title">Station videos</h1>
     <p class="lead" id="lead"></p>
+    <details id="how" hidden><summary>How this part works</summary><ol id="howbody"></ol>
+      <p class="more"><a href="/claus/guide-students/">Full student guide</a></p></details>
   </header>
   <section class="choose" id="choose" hidden>
     <h2>Which part are you working on?</h2>
     <a href="#vocab"><b>Part 1: learn the parts</b><span>The vocabulary sheet with the word box.</span></a>
     <a href="#blind"><b>Part 2: describe what you see</b><span>One of you watches the videos once, the other takes notes.</span></a>
     <a href="#review"><b>Part 3: write and check together</b><span>Write the description and replay the stations to check it.</span></a>
+    <h2 style="margin-top:8px">Guides</h2>
+    <a href="/claus/guide-students/"><b>Student guide</b><span>What to do in each part, with useful language.</span></a>
+    <a href="/claus/guide-lecturers/"><b>Lecturer manual</b><span>Preparation, timing and troubleshooting.</span></a>
   </section>
   <section class="choose" id="role" hidden>
     <h2>What is your job in this part?</h2>
@@ -101,6 +110,8 @@ footer{display:flex;gap:12px;align-items:center;flex-wrap:wrap;color:var(--muted
   </div>
   <footer>
     <nav class="mode" id="modes" aria-label="Part"></nav>
+    <a href="/claus/guide-students/" style="color:var(--muted)">Student guide</a>
+    <a href="/claus/guide-lecturers/" style="color:var(--muted)">Lecturer manual</a>
     <span id="reset-wrap" hidden><button class="btn quiet" id="reset" type="button">Reset stations</button></span>
   </footer>
 </div>
@@ -205,6 +216,13 @@ footer{display:flex;gap:12px;align-items:center;flex-wrap:wrap;color:var(--muted
     var w=$("writer"); w.hidden=!on;
     if(on && !$("wf").getAttribute("src")) $("wf").setAttribute("src",WURL);
   }
+  var HOW={"vocab": ["Look at the picture of the plant. Each part has a number.", "Choose the right name from the word box for each number. Every name is used once.", "Write in your own words what each part does.", "Compare with your partner and with the station pictures on page 2."], "blind-role": ["Decide who watches (the hand) and who listens and writes (the voice).", "Choose your role below. The voice does not look at the hand's screen."], "blind-hand": ["Watch each station. It plays only once.", "Tell your partner what happens: what moves, where it goes, what changes.", "Use the names from Part 1."], "blind-voice": ["Do not look at your partner's screen.", "Join the writing area with the class code and a nickname.", "Take notes. Ask questions: What happens next? Where does it go? What is this part called?"], "review": ["Both of you join the writing area with the class code.", "Write one complete description together, from start to finish.", "Use the Part 1 names and connectors: first, then, after that, finally.", "Replay any station on the right to check your text. Then read it aloud once."]};
+  function showHow(key){
+    var d=$("how"), b=$("howbody"); b.textContent="";
+    var items=HOW[key]; if(!items){d.hidden=true;return}
+    items.forEach(function(t){var li=document.createElement("li");li.textContent=t;b.appendChild(li)});
+    d.hidden=false; d.open=(key==="vocab"||key==="blind-role");
+  }
   function route(){
     var raw=(location.hash||"").replace("#","");
     var h=raw, view="";
@@ -212,6 +230,7 @@ footer{display:flex;gap:12px;align-items:center;flex-wrap:wrap;color:var(--muted
     $("sheet").hidden=true; $("role").hidden=true; $("choose").hidden=true; $("player").hidden=true; setWriter(false);
     $("cols").classList.remove("split"); $("app").classList.remove("wide");
     try{v.pause()}catch(e){}
+    $("how").hidden=true;
     if(!MODES[h]){
       mode=null; $("choose").hidden=false;
       $("kicker").textContent="Claus process"; $("title").textContent="Describe a sulfur recovery plant";
@@ -220,15 +239,15 @@ footer{display:flex;gap:12px;align-items:center;flex-wrap:wrap;color:var(--muted
     mode=h; var m=MODES[h]; done=doneSet();
     $("kicker").textContent=m.kicker; $("title").textContent=m.title; $("lead").textContent=m.lead; $("hint").textContent=m.hint;
     $("reset-wrap").hidden=m.free; modesNav();
-    if(m.sheet){$("sheet").hidden=false;return}
-    if(h==="blind"&&!view){$("role").hidden=false;return}
+    if(m.sheet){$("sheet").hidden=false;showHow("vocab");return}
+    if(h==="blind"&&!view){$("role").hidden=false;showHow("blind-role");return}
     if(h==="blind"&&view==="voice"){ $("reset-wrap").hidden=true;
       $("title").textContent="Listen and write"; $("lead").textContent="Your partner watches the plant and describes it. Take notes and write the description with your partner.";
-      $("wnote").textContent="Join with the class code your teacher gives you."; $("app").classList.add("wide"); setWriter(true); return}
-    if(h==="blind"&&view==="hand"){
+      $("wnote").textContent="Join with the class code your teacher gives you."; $("app").classList.add("wide"); setWriter(true); showHow("blind-voice"); return}
+    if(h==="blind"&&view==="hand"){ showHow("blind-hand");
       $("lead").textContent="Watch each station once. Tell your partner what happens while they take notes. Your partner does not look at your screen."}
     if(h==="review"){
-      $("app").classList.add("wide"); $("cols").classList.add("split"); $("wnote").textContent="Write and check your description here."; setWriter(true)}
+      $("app").classList.add("wide"); $("cols").classList.add("split"); $("wnote").textContent="Write and check your description here."; setWriter(true); showHow("review")}
     $("player").hidden=false;
     buildTiles();
     var first=0; if(!m.free){for(var i=0;i<N;i++){if(done.indexOf(i)<0){first=i;break}}}
