@@ -1,0 +1,35 @@
+{
+  "_note": "Single source of truth for the start page. To add an exercise: append an entry to \"exercises\" with the Studiengang ids it belongs to. Programme list taken from a third-party listing (studieren.at, Oct 2026) - check against technikum-wien.at before the new intake.",
+  "programmes": [
+    { "id": "biomedical-engineering", "name": "Biomedical Engineering" },
+    { "id": "elektronik", "name": "Elektronik", "note": "all four specialisations" },
+    { "id": "erneuerbare-energien", "name": "Erneuerbare Energien" },
+    { "id": "human-factors-and-sports-engineering", "name": "Human Factors and Sports Engineering" },
+    { "id": "informatik", "name": "Informatik" },
+    { "id": "informations-und-kommunikationssysteme", "name": "Informations- und Kommunikationssysteme" },
+    { "id": "internationales-wirtschaftsingenieurwesen", "name": "Internationales Wirtschaftsingenieurwesen" },
+    { "id": "maschinenbau", "name": "Maschinenbau" },
+    { "id": "mechatronik-und-robotik", "name": "Mechatronik und Robotik" },
+    { "id": "nachhaltige-umwelt-und-bioprozesstechnik", "name": "Nachhaltige Umwelt- und Bioprozesstechnik" },
+    { "id": "wasserstofftechnik", "name": "Wasserstofftechnik" },
+    { "id": "wirtschaftsinformatik", "name": "Wirtschaftsinformatik" }
+  ],
+  "exercises": [
+    {
+      "id": "claus",
+      "title": "The Claus process",
+      "summary": "Sulfur recovery plant, seven stations.",
+      "path": "/claus/",
+      "stations": 7,
+      "programmes": ["nachhaltige-umwelt-und-bioprozesstechnik", "wasserstofftechnik", "erneuerbare-energien"]
+    },
+    {
+      "id": "vmodel",
+      "title": "The mechatronic V-model",
+      "summary": "Developing a mechatronic system, five stations.",
+      "path": "/vmodel/",
+      "stations": 5,
+      "programmes": ["mechatronik-und-robotik", "maschinenbau", "elektronik"]
+    }
+  ]
+}

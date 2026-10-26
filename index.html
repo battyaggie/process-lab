@@ -8,13 +8,86 @@
 body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.5 "IBM Plex Sans",system-ui,sans-serif;padding:24px max(16px,env(safe-area-inset-left,0px))}
 main{max-width:760px;margin:0 auto;display:flex;flex-direction:column;gap:16px}
 h1{font:700 clamp(28px,5vw,40px)/1.1 "Barlow Semi Condensed",sans-serif;margin:0}
+h2{font:600 22px "Barlow Semi Condensed",sans-serif;margin:8px 0 0}
 p{margin:0;color:var(--muted)}
-a.card{display:block;text-decoration:none;color:inherit;background:var(--panel);border:1.5px solid var(--line);border-radius:8px;padding:16px 18px}
-a.card b{font:600 22px "Barlow Semi Condensed",sans-serif;display:block}
-a.card:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:10px}
+.card{display:block;text-align:left;font:inherit;color:inherit;text-decoration:none;background:var(--panel);border:1.5px solid var(--line);border-radius:8px;padding:14px 16px;cursor:pointer;width:100%;box-sizing:border-box}
+.card:hover{border-color:var(--accent)}
+.card:focus-visible,.back:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.card b{font:600 20px/1.2 "Barlow Semi Condensed",sans-serif;display:block}
+.card small{color:var(--muted);display:block;margin-top:2px}
+.list{display:flex;flex-direction:column;gap:10px}
+.list .card b{font-size:22px}
+.back{align-self:flex-start;background:none;border:0;padding:4px 0;font:inherit;color:var(--accent);cursor:pointer;text-decoration:underline}
+.empty{background:var(--panel);border:1.5px dashed var(--line);border-radius:8px;padding:16px 18px}
+[hidden]{display:none!important}
 </style></head><body><main>
 <h1>Process Lab</h1>
-<p>Watch a process, describe it, write it up. Choose the exercise your teacher gave you.</p>
-<a class="card" href="/claus/"><b>The Claus process</b><span>Sulfur recovery plant, seven stations.</span></a>
-<a class="card" href="/vmodel/"><b>The mechatronic V-model</b><span>Developing a mechatronic system, five stations.</span></a>
-</main></body></html>
+
+<section id="step1">
+  <p>Watch a process, describe it, write it up. First choose your degree programme (Studiengang).</p>
+  <h2>Your Studiengang</h2>
+  <div class="grid" id="programmes" style="margin-top:10px"></div>
+</section>
+
+<section id="step2" hidden>
+  <button class="back" id="back" type="button">← Choose another Studiengang</button>
+  <h2 id="ptitle"></h2>
+  <p>Choose the exercise your teacher gave you.</p>
+  <div class="list" id="exercises" style="margin-top:10px"></div>
+</section>
+
+<noscript><p>This page needs JavaScript. Ask your teacher for the direct link to your exercise.</p></noscript>
+</main>
+<script>
+(function(){
+  var s1=document.getElementById('step1'), s2=document.getElementById('step2');
+  var pbox=document.getElementById('programmes'), ebox=document.getElementById('exercises');
+  var ptitle=document.getElementById('ptitle'), data=null;
+
+  function el(tag,cls,html){var e=document.createElement(tag);if(cls)e.className=cls;if(html!=null)e.textContent=html;return e;}
+
+  function count(pid){return data.exercises.filter(function(x){return x.programmes.indexOf(pid)>-1;}).length;}
+
+  function render(){
+    pbox.textContent='';
+    data.programmes.forEach(function(p){
+      var n=count(p.id), b=el('a','card');
+      b.href='#'+p.id;
+      b.appendChild(el('b',null,p.name));
+      b.appendChild(el('small',null,(p.note?p.note+' · ':'')+(n===1?'1 exercise':n+' exercises')));
+      pbox.appendChild(b);
+    });
+    route();
+  }
+
+  function route(){
+    var id=decodeURIComponent(location.hash.slice(1));
+    var p=data.programmes.filter(function(x){return x.id===id;})[0];
+    if(!p){s1.hidden=false;s2.hidden=true;document.title='Process Lab';return;}
+    s1.hidden=true;s2.hidden=false;
+    document.title=p.name+' · Process Lab';
+    ptitle.textContent=p.name;
+    ebox.textContent='';
+    var list=data.exercises.filter(function(x){return x.programmes.indexOf(p.id)>-1;});
+    if(!list.length){
+      var e=el('div','empty','There are no exercises for this Studiengang yet. Ask your teacher which exercise to do.');
+      ebox.appendChild(e);
+    }
+    list.forEach(function(x){
+      var a=el('a','card'); a.href=x.path;
+      a.appendChild(el('b',null,x.title));
+      a.appendChild(el('small',null,x.summary));
+      ebox.appendChild(a);
+    });
+    window.scrollTo(0,0);
+  }
+
+  document.getElementById('back').addEventListener('click',function(){location.hash='';});
+  window.addEventListener('hashchange',function(){if(data)route();});
+
+  fetch('/exercises.json',{cache:'no-cache'}).then(function(r){return r.json();}).then(function(d){data=d;render();})
+  .catch(function(){pbox.appendChild(el('div','empty','The exercise list could not be loaded. Please reload the page or ask your teacher for the direct link.'));});
+})();
+</script>
+</body></html>
