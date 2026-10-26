@@ -85,6 +85,16 @@
         "biomedical-engineering",
         "nachhaltige-umwelt-und-bioprozesstechnik"
       ]
+    },
+    {
+      "id": "hemodialysis",
+      "title": "Hemodialysis",
+      "summary": "Cleaning the blood with a dialysis machine, six stations.",
+      "path": "/hemodialysis/",
+      "stations": 6,
+      "programmes": [
+        "biomedical-engineering"
+      ]
     }
   ]
 }

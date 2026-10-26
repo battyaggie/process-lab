@@ -30,5 +30,14 @@
         "url": "/pcr/lecturer-4261135db113/pcr-lecturer-guide.docx"
       }
     ]
+  },
+  "hemodialysis": {
+    "manual": "/hemodialysis/lecturer-573a6f4b004d/",
+    "docs": [
+      {
+        "title": "One-page guide (Word)",
+        "url": "/hemodialysis/lecturer-573a6f4b004d/hemodialysis-lecturer-guide.docx"
+      }
+    ]
   }
 }
