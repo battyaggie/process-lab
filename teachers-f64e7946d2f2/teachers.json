@@ -4,6 +4,10 @@
     "manual": "/claus/lecturer-71b41e8d1c13/",
     "docs": [
       {
+        "title": "One-page guide (Word)",
+        "url": "/claus/lecturer-71b41e8d1c13/claus-lecturer-guide.docx"
+      },
+      {
         "title": "Lecturer manual (Word)",
         "url": "/claus/guides/lecturer-71b41e8d1c13.docx"
       }
@@ -11,7 +15,12 @@
   },
   "vmodel": {
     "manual": "/vmodel/lecturer-5e9a3c07f2b4/",
-    "docs": []
+    "docs": [
+      {
+        "title": "One-page guide (Word)",
+        "url": "/vmodel/lecturer-5e9a3c07f2b4/vmodel-lecturer-guide.docx"
+      }
+    ]
   },
   "pcr": {
     "manual": "/pcr/lecturer-4261135db113/",
