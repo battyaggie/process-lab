@@ -48,5 +48,14 @@
         "url": "/autoclave/lecturer-c70ddf536a44/autoclave-lecturer-guide.docx"
       }
     ]
+  },
+  "hipimplant": {
+    "manual": "/hipimplant/lecturer-a5cb87608980/",
+    "docs": [
+      {
+        "title": "One-page guide (Word)",
+        "url": "/hipimplant/lecturer-a5cb87608980/hipimplant-lecturer-guide.docx"
+      }
+    ]
   }
 }

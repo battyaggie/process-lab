@@ -105,6 +105,17 @@
       "programmes": [
         "biomedical-engineering"
       ]
+    },
+    {
+      "id": "hipimplant",
+      "title": "Production of a titanium hip implant",
+      "summary": "From a titanium bar to a sterile-packed implant stem, seven stations.",
+      "path": "/hipimplant/",
+      "stations": 7,
+      "programmes": [
+        "biomedical-engineering",
+        "maschinenbau"
+      ]
     }
   ]
 }
