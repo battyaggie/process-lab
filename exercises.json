@@ -21,7 +21,7 @@
       "summary": "Sulfur recovery plant, seven stations.",
       "path": "/claus/",
       "stations": 7,
-      "programmes": ["nachhaltige-umwelt-und-bioprozesstechnik", "wasserstofftechnik", "erneuerbare-energien"]
+      "programmes": ["erneuerbare-energien", "nachhaltige-umwelt-und-bioprozesstechnik"]
     },
     {
       "id": "vmodel",
@@ -29,7 +29,7 @@
       "summary": "Developing a mechatronic system, five stations.",
       "path": "/vmodel/",
       "stations": 5,
-      "programmes": ["mechatronik-und-robotik", "maschinenbau", "elektronik"]
+      "programmes": ["elektronik", "maschinenbau", "mechatronik-und-robotik"]
     }
   ]
 }
