@@ -61,11 +61,23 @@ details#how{background:var(--panel);border:1.5px solid var(--line);border-radius
 details#how summary{cursor:pointer;font-family:var(--display);font-weight:600;font-size:18px}
 details#how ol{margin:8px 0 4px;padding-left:22px;color:var(--fg)}
 details#how .more{margin:6px 0 0;font-size:14px}
+.topbar{position:sticky;top:0;z-index:20;background:var(--bg);border-bottom:1.5px solid var(--line);padding:8px max(16px,env(safe-area-inset-right,0px)) 8px max(16px,env(safe-area-inset-left,0px))}
+.topbar-in{max-width:980px;margin:0 auto;display:flex;gap:8px 16px;align-items:center;flex-wrap:wrap}
+.topbar .mode a{font-size:18px;padding:8px 18px}
+.nobak{margin:0;font-size:14px;color:var(--muted);flex:1 1 280px;min-width:0}
+.nobak strong{color:var(--fg)}
+body{padding-top:0}
 footer{display:flex;gap:12px;align-items:center;flex-wrap:wrap;color:var(--muted);font-size:13px}
 @media (max-width:520px){.tile .s{display:none}.tile .n{font-size:24px}.tiles{gap:5px}}
 </style>
 
 </head><body>
+<div class="topbar" id="topbar">
+  <div class="topbar-in">
+    <nav class="mode" id="modes" aria-label="Part"></nav>
+    <p class="nobak"><strong>Please do not use your browser's Back button.</strong> Use the Part 1, 2 and 3 buttons instead, or you may lose your writing group.</p>
+  </div>
+</div>
 <div class="wrap" id="app">
   <header>
     <div class="kicker" id="kicker">Claus process</div>
@@ -108,7 +120,6 @@ footer{display:flex;gap:12px;align-items:center;flex-wrap:wrap;color:var(--muted
   </main>
   </div>
   <footer>
-    <nav class="mode" id="modes" aria-label="Part"></nav>
     <a href="/claus/guide-students/" style="color:var(--muted)">Student guide</a>
     <span id="reset-wrap" hidden><button class="btn quiet" id="reset" type="button">Reset stations</button></span>
   </footer>
@@ -232,7 +243,7 @@ footer{display:flex;gap:12px;align-items:center;flex-wrap:wrap;color:var(--muted
     if(!MODES[h]){
       mode=null; $("choose").hidden=false;
       $("kicker").textContent="Claus process"; $("title").textContent="Describe a sulfur recovery plant";
-      $("lead").textContent="Three parts. Your teacher tells you which one to open."; $("modes").textContent=""; $("reset-wrap").hidden=true; return;
+      $("lead").textContent="Three parts. Your teacher tells you which one to open."; modesNav(); $("reset-wrap").hidden=true; return;
     }
     mode=h; var m=MODES[h]; done=doneSet();
     $("kicker").textContent=m.kicker; $("title").textContent=m.title; $("lead").textContent=m.lead; $("hint").textContent=m.hint;
@@ -251,6 +262,9 @@ footer{display:flex;gap:12px;align-items:center;flex-wrap:wrap;color:var(--muted
     var first=0; if(!m.free){for(var i=0;i<N;i++){if(done.indexOf(i)<0){first=i;break}}}
     select(first);
   }
+  var writerUsed=false;
+  var _sw=setWriter; setWriter=function(on){ if(on)writerUsed=true; _sw(on) };
+  window.addEventListener("beforeunload",function(e){ if(writerUsed){e.preventDefault();e.returnValue=""} });
   window.addEventListener("hashchange",route);
   route();
 })();
