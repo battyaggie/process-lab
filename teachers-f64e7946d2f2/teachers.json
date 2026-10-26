@@ -1,0 +1,25 @@
+{
+  "_note": "Lecturer links per exercise id. Each entry: manual (web page), docs (list of title/url). Add an entry here when a new exercise is registered in /exercises.json.",
+  "claus": {
+    "manual": "/claus/lecturer-71b41e8d1c13/",
+    "docs": [
+      {
+        "title": "Lecturer manual (Word)",
+        "url": "/claus/guides/lecturer-71b41e8d1c13.docx"
+      }
+    ]
+  },
+  "vmodel": {
+    "manual": "/vmodel/lecturer-5e9a3c07f2b4/",
+    "docs": []
+  },
+  "pcr": {
+    "manual": "/pcr/lecturer-4261135db113/",
+    "docs": [
+      {
+        "title": "One-page guide (Word)",
+        "url": "/pcr/lecturer-4261135db113/pcr-lecturer-guide.docx"
+      }
+    ]
+  }
+}
