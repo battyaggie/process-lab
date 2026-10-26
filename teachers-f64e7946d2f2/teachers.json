@@ -39,5 +39,14 @@
         "url": "/hemodialysis/lecturer-573a6f4b004d/hemodialysis-lecturer-guide.docx"
       }
     ]
+  },
+  "autoclave": {
+    "manual": "/autoclave/lecturer-c70ddf536a44/",
+    "docs": [
+      {
+        "title": "One-page guide (Word)",
+        "url": "/autoclave/lecturer-c70ddf536a44/autoclave-lecturer-guide.docx"
+      }
+    ]
   }
 }

@@ -95,6 +95,16 @@
       "programmes": [
         "biomedical-engineering"
       ]
+    },
+    {
+      "id": "autoclave",
+      "title": "Steam sterilization in an autoclave",
+      "summary": "Making surgical instruments sterile with steam, six stations.",
+      "path": "/autoclave/",
+      "stations": 6,
+      "programmes": [
+        "biomedical-engineering"
+      ]
     }
   ]
 }
