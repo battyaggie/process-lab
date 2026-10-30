@@ -116,6 +116,16 @@
         "biomedical-engineering",
         "maschinenbau"
       ]
+    },
+    {
+      "id": "visionpickandplace",
+      "title": "A vision-guided robot picks parts from a moving conveyor",
+      "summary": "Sensors, camera and robot working together, six stations.",
+      "path": "/visionpickandplace/",
+      "stations": 6,
+      "programmes": [
+        "mechatronik-und-robotik"
+      ]
     }
   ]
 }

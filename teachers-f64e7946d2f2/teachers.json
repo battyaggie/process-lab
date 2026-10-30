@@ -57,5 +57,14 @@
         "url": "/hipimplant/lecturer-a5cb87608980/hipimplant-lecturer-guide.docx"
       }
     ]
+  },
+  "visionpickandplace": {
+    "manual": "/visionpickandplace/lecturer-73e44401aa9d/",
+    "docs": [
+      {
+        "title": "One-page guide (Word)",
+        "url": "/visionpickandplace/lecturer-73e44401aa9d/visionpickandplace-lecturer-guide.docx"
+      }
+    ]
   }
 }
