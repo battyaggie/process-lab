@@ -126,6 +126,17 @@
       "programmes": [
         "mechatronik-und-robotik"
       ]
+    },
+    {
+      "id": "bottlingline",
+      "title": "Filling and capping bottles on an automated line",
+      "summary": "From empty bottles to labeled packs, seven stations.",
+      "path": "/bottlingline/",
+      "stations": 7,
+      "programmes": [
+        "mechatronik-und-robotik",
+        "internationales-wirtschaftsingenieurwesen"
+      ]
     }
   ]
 }
