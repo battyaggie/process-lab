@@ -75,5 +75,14 @@
         "url": "/bottlingline/lecturer-7a5e9930ed41/bottlingline-lecturer-guide.docx"
       }
     ]
+  },
+  "mobilerobotnavigation": {
+    "manual": "/mobilerobotnavigation/lecturer-056a772acf84/",
+    "docs": [
+      {
+        "title": "One-page guide (Word)",
+        "url": "/mobilerobotnavigation/lecturer-056a772acf84/mobilerobotnavigation-lecturer-guide.docx"
+      }
+    ]
   }
 }

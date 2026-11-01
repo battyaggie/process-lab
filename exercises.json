@@ -137,6 +137,17 @@
         "mechatronik-und-robotik",
         "internationales-wirtschaftsingenieurwesen"
       ]
+    },
+    {
+      "id": "mobilerobotnavigation",
+      "title": "An autonomous mobile robot in a warehouse",
+      "summary": "From transport order to charging, six stations.",
+      "path": "/mobilerobotnavigation/",
+      "stations": 6,
+      "programmes": [
+        "mechatronik-und-robotik",
+        "informatik"
+      ]
     }
   ]
 }
