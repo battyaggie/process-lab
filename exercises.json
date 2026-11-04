@@ -148,6 +148,17 @@
         "mechatronik-und-robotik",
         "informatik"
       ]
+    },
+    {
+      "id": "pemelectrolysis",
+      "title": "Making green hydrogen with a PEM electrolyzer",
+      "summary": "Splitting water with renewable electricity, seven stations.",
+      "path": "/pemelectrolysis/",
+      "stations": 7,
+      "programmes": [
+        "wasserstofftechnik",
+        "erneuerbare-energien"
+      ]
     }
   ]
 }

@@ -84,5 +84,14 @@
         "url": "/mobilerobotnavigation/lecturer-056a772acf84/mobilerobotnavigation-lecturer-guide.docx"
       }
     ]
+  },
+  "pemelectrolysis": {
+    "manual": "/pemelectrolysis/lecturer-0df4f7991e36/",
+    "docs": [
+      {
+        "title": "One-page guide (Word)",
+        "url": "/pemelectrolysis/lecturer-0df4f7991e36/pemelectrolysis-lecturer-guide.docx"
+      }
+    ]
   }
 }
