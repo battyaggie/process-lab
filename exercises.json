@@ -170,6 +170,16 @@
         "wasserstofftechnik",
         "elektronik"
       ]
+    },
+    {
+      "id": "hydrogenrefueling",
+      "title": "Refueling a car at a hydrogen station",
+      "summary": "Hydrogen from tube trailer to car tank, six stations.",
+      "path": "/hydrogenrefueling/",
+      "stations": 6,
+      "programmes": [
+        "wasserstofftechnik"
+      ]
     }
   ]
 }

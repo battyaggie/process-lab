@@ -102,5 +102,14 @@
         "url": "/fuelcellvehicle/lecturer-4bac1635d939/fuelcellvehicle-lecturer-guide.docx"
       }
     ]
+  },
+  "hydrogenrefueling": {
+    "manual": "/hydrogenrefueling/lecturer-c3bb33637716/",
+    "docs": [
+      {
+        "title": "One-page guide (Word)",
+        "url": "/hydrogenrefueling/lecturer-c3bb33637716/hydrogenrefueling-lecturer-guide.docx"
+      }
+    ]
   }
 }
