@@ -159,6 +159,17 @@
         "wasserstofftechnik",
         "erneuerbare-energien"
       ]
+    },
+    {
+      "id": "fuelcellvehicle",
+      "title": "How a hydrogen fuel-cell car drives",
+      "summary": "Hydrogen car from tank to wheels, six stations.",
+      "path": "/fuelcellvehicle/",
+      "stations": 6,
+      "programmes": [
+        "wasserstofftechnik",
+        "elektronik"
+      ]
     }
   ]
 }

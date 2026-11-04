@@ -93,5 +93,14 @@
         "url": "/pemelectrolysis/lecturer-0df4f7991e36/pemelectrolysis-lecturer-guide.docx"
       }
     ]
+  },
+  "fuelcellvehicle": {
+    "manual": "/fuelcellvehicle/lecturer-4bac1635d939/",
+    "docs": [
+      {
+        "title": "One-page guide (Word)",
+        "url": "/fuelcellvehicle/lecturer-4bac1635d939/fuelcellvehicle-lecturer-guide.docx"
+      }
+    ]
   }
 }
