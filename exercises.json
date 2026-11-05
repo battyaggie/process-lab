@@ -224,6 +224,17 @@
         "maschinenbau",
         "internationales-wirtschaftsingenieurwesen"
       ]
+    },
+    {
+      "id": "injectionmolding",
+      "title": "One cycle of plastic injection molding",
+      "summary": "From plastic granules to a finished part, six stations.",
+      "path": "/injectionmolding/",
+      "stations": 6,
+      "programmes": [
+        "internationales-wirtschaftsingenieurwesen",
+        "maschinenbau"
+      ]
     }
   ]
 }

@@ -147,5 +147,14 @@
         "url": "/sandcasting/lecturer-f30ba952a8a0/sandcasting-lecturer-guide.docx"
       }
     ]
+  },
+  "injectionmolding": {
+    "manual": "/injectionmolding/lecturer-56ab40ed0fc2/",
+    "docs": [
+      {
+        "title": "One-page guide (Word)",
+        "url": "/injectionmolding/lecturer-56ab40ed0fc2/injectionmolding-lecturer-guide.docx"
+      }
+    ]
   }
 }
