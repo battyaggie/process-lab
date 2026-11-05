@@ -129,5 +129,14 @@
         "url": "/hydraulicpress/lecturer-b438e05e84b7/hydraulicpress-lecturer-guide.docx"
       }
     ]
+  },
+  "smtline": {
+    "manual": "/smtline/lecturer-f28c9cffe640/",
+    "docs": [
+      {
+        "title": "One-page guide (Word)",
+        "url": "/smtline/lecturer-f28c9cffe640/smtline-lecturer-guide.docx"
+      }
+    ]
   }
 }

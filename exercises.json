@@ -202,6 +202,17 @@
         "maschinenbau",
         "mechatronik-und-robotik"
       ]
+    },
+    {
+      "id": "smtline",
+      "title": "Assembling a circuit board on an SMT line",
+      "summary": "Surface-mount production, from bare board to inspected board, seven stations.",
+      "path": "/smtline/",
+      "stations": 7,
+      "programmes": [
+        "elektronik",
+        "mechatronik-und-robotik"
+      ]
     }
   ]
 }
