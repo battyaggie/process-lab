@@ -111,5 +111,14 @@
         "url": "/hydrogenrefueling/lecturer-c3bb33637716/hydrogenrefueling-lecturer-guide.docx"
       }
     ]
+  },
+  "cncmilling": {
+    "manual": "/cncmilling/lecturer-6cd0747493ad/",
+    "docs": [
+      {
+        "title": "One-page guide (Word)",
+        "url": "/cncmilling/lecturer-6cd0747493ad/cncmilling-lecturer-guide.docx"
+      }
+    ]
   }
 }

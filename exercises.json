@@ -180,6 +180,17 @@
       "programmes": [
         "wasserstofftechnik"
       ]
+    },
+    {
+      "id": "cncmilling",
+      "title": "From CAD drawing to a milled part",
+      "summary": "Setting up and running a CNC milling machine, six stations.",
+      "path": "/cncmilling/",
+      "stations": 6,
+      "programmes": [
+        "maschinenbau",
+        "mechatronik-und-robotik"
+      ]
     }
   ]
 }
