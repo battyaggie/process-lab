@@ -235,6 +235,17 @@
         "internationales-wirtschaftsingenieurwesen",
         "maschinenbau"
       ]
+    },
+    {
+      "id": "carbonbikeframe",
+      "title": "Making a carbon-fiber bicycle frame",
+      "summary": "Carbon-fiber bicycle frame production, seven stations.",
+      "path": "/carbonbikeframe/",
+      "stations": 7,
+      "programmes": [
+        "human-factors-and-sports-engineering",
+        "maschinenbau"
+      ]
     }
   ]
 }

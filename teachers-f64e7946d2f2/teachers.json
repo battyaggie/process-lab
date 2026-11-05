@@ -156,5 +156,14 @@
         "url": "/injectionmolding/lecturer-56ab40ed0fc2/injectionmolding-lecturer-guide.docx"
       }
     ]
+  },
+  "carbonbikeframe": {
+    "manual": "/carbonbikeframe/lecturer-26c07ec1ffb3/",
+    "docs": [
+      {
+        "title": "One-page guide (Word)",
+        "url": "/carbonbikeframe/lecturer-26c07ec1ffb3/carbonbikeframe-lecturer-guide.docx"
+      }
+    ]
   }
 }
