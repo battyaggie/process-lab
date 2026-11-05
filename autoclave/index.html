@@ -220,7 +220,7 @@ footer{display:flex;gap:12px;align-items:center;flex-wrap:wrap;color:var(--muted
       nav.appendChild(a);
     });
   }
-  var WURL="https://collab-writing-app-battyaggie.vercel.app/join";
+  var WURL=(function(b){try{var c=localStorage.getItem("pl-code");return c?b+"?code="+encodeURIComponent(c):b}catch(e){return b}})("https://collab-writing-app-battyaggie.vercel.app/join"); try{$("wnew").href=WURL}catch(e){}
   function setWriter(on){
     var w=$("writer"); w.hidden=!on;
     if(on && !$("wf").getAttribute("src")) $("wf").setAttribute("src",WURL);
