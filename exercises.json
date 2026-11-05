@@ -213,6 +213,17 @@
         "elektronik",
         "mechatronik-und-robotik"
       ]
+    },
+    {
+      "id": "sandcasting",
+      "title": "Sand casting of a metal part",
+      "summary": "Foundry sand casting, seven stations.",
+      "path": "/sandcasting/",
+      "stations": 7,
+      "programmes": [
+        "maschinenbau",
+        "internationales-wirtschaftsingenieurwesen"
+      ]
     }
   ]
 }

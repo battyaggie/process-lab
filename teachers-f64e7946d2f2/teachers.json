@@ -138,5 +138,14 @@
         "url": "/smtline/lecturer-f28c9cffe640/smtline-lecturer-guide.docx"
       }
     ]
+  },
+  "sandcasting": {
+    "manual": "/sandcasting/lecturer-f30ba952a8a0/",
+    "docs": [
+      {
+        "title": "One-page guide (Word)",
+        "url": "/sandcasting/lecturer-f30ba952a8a0/sandcasting-lecturer-guide.docx"
+      }
+    ]
   }
 }
