@@ -120,5 +120,14 @@
         "url": "/cncmilling/lecturer-6cd0747493ad/cncmilling-lecturer-guide.docx"
       }
     ]
+  },
+  "hydraulicpress": {
+    "manual": "/hydraulicpress/lecturer-b438e05e84b7/",
+    "docs": [
+      {
+        "title": "One-page guide (Word)",
+        "url": "/hydraulicpress/lecturer-b438e05e84b7/hydraulicpress-lecturer-guide.docx"
+      }
+    ]
   }
 }

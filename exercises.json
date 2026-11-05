@@ -191,6 +191,17 @@
         "maschinenbau",
         "mechatronik-und-robotik"
       ]
+    },
+    {
+      "id": "hydraulicpress",
+      "title": "A hydraulic press and its oil circuit",
+      "summary": "How oil pressure moves a cylinder and presses a workpiece, six stations.",
+      "path": "/hydraulicpress/",
+      "stations": 6,
+      "programmes": [
+        "maschinenbau",
+        "mechatronik-und-robotik"
+      ]
     }
   ]
 }
