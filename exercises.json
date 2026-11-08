@@ -246,6 +246,27 @@
         "human-factors-and-sports-engineering",
         "maschinenbau"
       ]
+    },
+    {
+      "id": "fiberopticlink",
+      "title": "Sending data through an optical fiber",
+      "summary": "Fiber-optic data link, six stations.",
+      "path": "/fiberopticlink/",
+      "stations": 6,
+      "programmes": [
+        "informations-und-kommunikationssysteme",
+        "elektronik"
+      ]
+    },
+    {
+      "id": "windturbine",
+      "title": "How a wind turbine produces electricity",
+      "summary": "Wind turbine, six stations.",
+      "path": "/windturbine/",
+      "stations": 6,
+      "programmes": [
+        "erneuerbare-energien"
+      ]
     }
   ]
 }

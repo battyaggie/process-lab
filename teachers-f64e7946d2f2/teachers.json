@@ -165,5 +165,23 @@
         "url": "/carbonbikeframe/lecturer-26c07ec1ffb3/carbonbikeframe-lecturer-guide.docx"
       }
     ]
+  },
+  "fiberopticlink": {
+    "manual": "/fiberopticlink/lecturer-6e5fe4769d9e/",
+    "docs": [
+      {
+        "title": "One-page guide (Word)",
+        "url": "/fiberopticlink/lecturer-6e5fe4769d9e/fiberopticlink-lecturer-guide.docx"
+      }
+    ]
+  },
+  "windturbine": {
+    "manual": "/windturbine/lecturer-3ec8eece77da/",
+    "docs": [
+      {
+        "title": "One-page guide (Word)",
+        "url": "/windturbine/lecturer-3ec8eece77da/windturbine-lecturer-guide.docx"
+      }
+    ]
   }
 }
