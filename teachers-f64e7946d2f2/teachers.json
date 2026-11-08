@@ -183,5 +183,14 @@
         "url": "/windturbine/lecturer-3ec8eece77da/windturbine-lecturer-guide.docx"
       }
     ]
+  },
+  "securewebpage": {
+    "manual": "/securewebpage/lecturer-0bbc04451a5d/",
+    "docs": [
+      {
+        "title": "One-page guide (Word)",
+        "url": "/securewebpage/lecturer-0bbc04451a5d/securewebpage-lecturer-guide.docx"
+      }
+    ]
   }
 }

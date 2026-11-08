@@ -267,6 +267,18 @@
       "programmes": [
         "erneuerbare-energien"
       ]
+    },
+    {
+      "id": "securewebpage",
+      "title": "What happens when a browser opens a secure web page",
+      "summary": "Secure web page, six stations.",
+      "path": "/securewebpage/",
+      "stations": 6,
+      "programmes": [
+        "informatik",
+        "informations-und-kommunikationssysteme",
+        "wirtschaftsinformatik"
+      ]
     }
   ]
 }
