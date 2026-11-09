@@ -300,6 +300,17 @@
       "programmes": [
         "nachhaltige-umwelt-und-bioprozesstechnik"
       ]
+    },
+    {
+      "id": "gaitanalysis",
+      "title": "Walking in the motion-capture lab",
+      "summary": "Gait analysis in a motion-capture lab, six stations.",
+      "path": "/gaitanalysis/",
+      "stations": 6,
+      "programmes": [
+        "human-factors-and-sports-engineering",
+        "biomedical-engineering"
+      ]
     }
   ]
 }
