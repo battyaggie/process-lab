@@ -192,5 +192,14 @@
         "url": "/securewebpage/lecturer-0bbc04451a5d/securewebpage-lecturer-guide.docx"
       }
     ]
+  },
+  "containersupplychain": {
+    "manual": "/containersupplychain/lecturer-8f3b5354a34c/",
+    "docs": [
+      {
+        "title": "One-page guide (Word)",
+        "url": "/containersupplychain/lecturer-8f3b5354a34c/containersupplychain-lecturer-guide.docx"
+      }
+    ]
   }
 }

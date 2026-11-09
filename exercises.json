@@ -279,6 +279,17 @@
         "informations-und-kommunikationssysteme",
         "wirtschaftsinformatik"
       ]
+    },
+    {
+      "id": "containersupplychain",
+      "title": "How goods travel from a factory to a production line",
+      "summary": "Container supply chain, seven stations.",
+      "path": "/containersupplychain/",
+      "stations": 7,
+      "programmes": [
+        "internationales-wirtschaftsingenieurwesen",
+        "wirtschaftsinformatik"
+      ]
     }
   ]
 }
