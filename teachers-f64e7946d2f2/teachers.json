@@ -201,5 +201,23 @@
         "url": "/containersupplychain/lecturer-8f3b5354a34c/containersupplychain-lecturer-guide.docx"
       }
     ]
+  },
+  "wastewatertreatment": {
+    "manual": "/wastewatertreatment/lecturer-95e32675fd27/",
+    "docs": [
+      {
+        "title": "One-page guide (Word)",
+        "url": "/wastewatertreatment/lecturer-95e32675fd27/wastewatertreatment-lecturer-guide.docx"
+      }
+    ]
+  },
+  "gaitanalysis": {
+    "manual": "/gaitanalysis/lecturer-cc817b4104ee/",
+    "docs": [
+      {
+        "title": "One-page guide (Word)",
+        "url": "/gaitanalysis/lecturer-cc817b4104ee/gaitanalysis-lecturer-guide.docx"
+      }
+    ]
   }
 }

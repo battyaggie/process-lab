@@ -290,6 +290,27 @@
         "internationales-wirtschaftsingenieurwesen",
         "wirtschaftsinformatik"
       ]
+    },
+    {
+      "id": "wastewatertreatment",
+      "title": "How a wastewater treatment plant cleans water",
+      "summary": "Wastewater treatment plant, six stations.",
+      "path": "/wastewatertreatment/",
+      "stations": 6,
+      "programmes": [
+        "nachhaltige-umwelt-und-bioprozesstechnik"
+      ]
+    },
+    {
+      "id": "gaitanalysis",
+      "title": "Walking in the motion-capture lab",
+      "summary": "Gait analysis in a motion-capture lab, six stations.",
+      "path": "/gaitanalysis/",
+      "stations": 6,
+      "programmes": [
+        "human-factors-and-sports-engineering",
+        "biomedical-engineering"
+      ]
     }
   ]
 }
