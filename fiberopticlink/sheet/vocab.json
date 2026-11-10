@@ -1,0 +1,84 @@
+{
+ "storageKey": "fiberopticlink-vocab",
+ "pictures": [
+  {
+   "src": "/fiberopticlink/sheet/view-1.jpg",
+   "label": "View 1",
+   "alt": "Numbered picture of the process, view 1 of 2.",
+   "size": [
+    952,
+    345
+   ]
+  },
+  {
+   "src": "/fiberopticlink/sheet/view-2.jpg",
+   "label": "View 2",
+   "alt": "Numbered picture of the process, view 2 of 2.",
+   "size": [
+    952,
+    345
+   ]
+  }
+ ],
+ "parts": [
+  {
+   "n": 1,
+   "name": "Sending computer"
+  },
+  {
+   "n": 2,
+   "name": "Driver circuit"
+  },
+  {
+   "n": 3,
+   "name": "Laser diode"
+  },
+  {
+   "n": 4,
+   "name": "Connector"
+  },
+  {
+   "n": 5,
+   "name": "Optical fiber"
+  },
+  {
+   "n": 6,
+   "name": "Optical amplifier"
+  },
+  {
+   "n": 7,
+   "name": "Photodiode"
+  },
+  {
+   "n": 8,
+   "name": "Transimpedance amplifier"
+  },
+  {
+   "n": 9,
+   "name": "Decision circuit"
+  },
+  {
+   "n": 10,
+   "name": "Receiving computer"
+  }
+ ],
+ "wordBoxOrder": [
+  "Connector",
+  "Photodiode",
+  "Laser diode",
+  "Decision circuit",
+  "Sending computer",
+  "Optical amplifier",
+  "Driver circuit",
+  "Receiving computer",
+  "Transimpedance amplifier",
+  "Optical fiber"
+ ],
+ "detail": {
+  "text": "Here you can see the steps in more detail. These pictures show the stations of the video. Check that you can find every numbered part in the stations.",
+  "images": [
+   "/fiberopticlink/sheet/page-2.jpg"
+  ],
+  "alt": "Pictures of the stations of the video, with the numbered parts listed for each station."
+ }
+}

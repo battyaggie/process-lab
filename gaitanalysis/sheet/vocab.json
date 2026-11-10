@@ -1,0 +1,75 @@
+{
+ "storageKey": "gaitanalysis-vocab",
+ "pictures": [
+  {
+   "src": "/gaitanalysis/sheet/view-1.jpg",
+   "label": "View 1",
+   "alt": "Numbered picture of the process.",
+   "size": [
+    1292,
+    574
+   ]
+  }
+ ],
+ "parts": [
+  {
+   "n": 1,
+   "name": "Calibration wand"
+  },
+  {
+   "n": 2,
+   "name": "Infrared cameras"
+  },
+  {
+   "n": 3,
+   "name": "Reflective markers"
+  },
+  {
+   "n": 4,
+   "name": "EMG sensors"
+  },
+  {
+   "n": 5,
+   "name": "Walkway"
+  },
+  {
+   "n": 6,
+   "name": "Force plate"
+  },
+  {
+   "n": 7,
+   "name": "Synchronization unit"
+  },
+  {
+   "n": 8,
+   "name": "Capture computer"
+  },
+  {
+   "n": 9,
+   "name": "Skeleton model"
+  },
+  {
+   "n": 10,
+   "name": "Analysis report"
+  }
+ ],
+ "wordBoxOrder": [
+  "Force plate",
+  "Calibration wand",
+  "Analysis report",
+  "Infrared cameras",
+  "Synchronization unit",
+  "Walkway",
+  "EMG sensors",
+  "Skeleton model",
+  "Capture computer",
+  "Reflective markers"
+ ],
+ "detail": {
+  "text": "Here you can see the steps in more detail. These pictures show the stations of the video. Check that you can find every numbered part in the stations.",
+  "images": [
+   "/gaitanalysis/sheet/page-2.jpg"
+  ],
+  "alt": "Pictures of the stations of the video, with the numbered parts listed for each station."
+ }
+}

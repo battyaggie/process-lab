@@ -1,0 +1,90 @@
+{
+ "storageKey": "sandcasting-vocab",
+ "pictures": [
+  {
+   "src": "/sandcasting/sheet/view-1.jpg",
+   "label": "View 1",
+   "alt": "Numbered picture of the process, view 1 of 2.",
+   "size": [
+    1215,
+    684
+   ]
+  },
+  {
+   "src": "/sandcasting/sheet/view-2.jpg",
+   "label": "View 2",
+   "alt": "Numbered picture of the process, view 2 of 2.",
+   "size": [
+    1215,
+    684
+   ]
+  }
+ ],
+ "parts": [
+  {
+   "n": 1,
+   "name": "Pattern"
+  },
+  {
+   "n": 2,
+   "name": "Flask"
+  },
+  {
+   "n": 3,
+   "name": "Molding sand"
+  },
+  {
+   "n": 4,
+   "name": "Core"
+  },
+  {
+   "n": 5,
+   "name": "Induction furnace"
+  },
+  {
+   "n": 6,
+   "name": "Ladle"
+  },
+  {
+   "n": 7,
+   "name": "Sprue"
+  },
+  {
+   "n": 8,
+   "name": "Runner"
+  },
+  {
+   "n": 9,
+   "name": "Riser"
+  },
+  {
+   "n": 10,
+   "name": "Shakeout grid"
+  },
+  {
+   "n": 11,
+   "name": "Fettling station"
+  }
+ ],
+ "wordBoxOrder": [
+  "Sprue",
+  "Molding sand",
+  "Shakeout grid",
+  "Pattern",
+  "Induction furnace",
+  "Fettling station",
+  "Flask",
+  "Runner",
+  "Core",
+  "Riser",
+  "Ladle"
+ ],
+ "detail": {
+  "text": "Here you can see the steps in more detail. These pictures show the stations of the video. Check that you can find every numbered part in the stations.",
+  "images": [
+   "/sandcasting/sheet/page-2.jpg",
+   "/sandcasting/sheet/page-3.jpg"
+  ],
+  "alt": "Pictures of the stations of the video, with the numbered parts listed for each station."
+ }
+}

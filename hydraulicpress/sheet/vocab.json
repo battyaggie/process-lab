@@ -1,0 +1,85 @@
+{
+ "storageKey": "hydraulicpress-vocab",
+ "pictures": [
+  {
+   "src": "/hydraulicpress/sheet/view-1.jpg",
+   "label": "View 1",
+   "alt": "Numbered picture of the process, view 1 of 2.",
+   "size": [
+    1215,
+    684
+   ]
+  },
+  {
+   "src": "/hydraulicpress/sheet/view-2.jpg",
+   "label": "View 2",
+   "alt": "Numbered picture of the process, view 2 of 2.",
+   "size": [
+    1215,
+    684
+   ]
+  }
+ ],
+ "parts": [
+  {
+   "n": 1,
+   "name": "Reservoir"
+  },
+  {
+   "n": 2,
+   "name": "Suction filter"
+  },
+  {
+   "n": 3,
+   "name": "Electric motor"
+  },
+  {
+   "n": 4,
+   "name": "Hydraulic pump"
+  },
+  {
+   "n": 5,
+   "name": "Pressure relief valve"
+  },
+  {
+   "n": 6,
+   "name": "Pressure gauge"
+  },
+  {
+   "n": 7,
+   "name": "Directional control valve"
+  },
+  {
+   "n": 8,
+   "name": "Flow control valve"
+  },
+  {
+   "n": 9,
+   "name": "Hydraulic cylinder"
+  },
+  {
+   "n": 10,
+   "name": "Return filter"
+  }
+ ],
+ "wordBoxOrder": [
+  "Hydraulic cylinder",
+  "Hydraulic pump",
+  "Pressure gauge",
+  "Reservoir",
+  "Directional control valve",
+  "Return filter",
+  "Electric motor",
+  "Pressure relief valve",
+  "Flow control valve",
+  "Suction filter"
+ ],
+ "detail": {
+  "text": "Here you can see the steps in more detail. These pictures show the stations of the video. Check that you can find every numbered part in the stations.",
+  "images": [
+   "/hydraulicpress/sheet/page-2.jpg",
+   "/hydraulicpress/sheet/page-3.jpg"
+  ],
+  "alt": "Pictures of the stations of the video, with the numbered parts listed for each station."
+ }
+}

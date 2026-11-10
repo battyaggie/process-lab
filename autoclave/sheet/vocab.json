@@ -1,0 +1,80 @@
+{
+ "storageKey": "autoclave-vocab",
+ "pictures": [
+  {
+   "src": "/autoclave/sheet/view-1.jpg",
+   "label": "View 1",
+   "alt": "Numbered picture of the process.",
+   "size": [
+    1035,
+    403
+   ]
+  }
+ ],
+ "parts": [
+  {
+   "n": 1,
+   "name": "Loading trolley"
+  },
+  {
+   "n": 2,
+   "name": "Chamber"
+  },
+  {
+   "n": 3,
+   "name": "Door"
+  },
+  {
+   "n": 4,
+   "name": "Vacuum pump"
+  },
+  {
+   "n": 5,
+   "name": "Steam generator"
+  },
+  {
+   "n": 6,
+   "name": "Steam valve"
+  },
+  {
+   "n": 7,
+   "name": "Temperature sensor"
+  },
+  {
+   "n": 8,
+   "name": "Pressure gauge"
+  },
+  {
+   "n": 9,
+   "name": "Exhaust valve"
+  },
+  {
+   "n": 10,
+   "name": "Condenser"
+  },
+  {
+   "n": 11,
+   "name": "Controller"
+  }
+ ],
+ "wordBoxOrder": [
+  "Exhaust valve",
+  "Vacuum pump",
+  "Controller",
+  "Loading trolley",
+  "Temperature sensor",
+  "Condenser",
+  "Door",
+  "Steam valve",
+  "Chamber",
+  "Pressure gauge",
+  "Steam generator"
+ ],
+ "detail": {
+  "text": "Here you can see the steps in more detail. These pictures show the stations of the video. Check that you can find every numbered part in the stations.",
+  "images": [
+   "/autoclave/sheet/page-2.jpg"
+  ],
+  "alt": "Pictures of the stations of the video, with the numbered parts listed for each station."
+ }
+}

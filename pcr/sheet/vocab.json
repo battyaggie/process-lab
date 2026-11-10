@@ -1,0 +1,80 @@
+{
+ "storageKey": "pcr-vocab",
+ "pictures": [
+  {
+   "src": "/pcr/sheet/view-1.jpg",
+   "label": "View 1",
+   "alt": "Numbered picture of the process.",
+   "size": [
+    945,
+    531
+   ]
+  }
+ ],
+ "parts": [
+  {
+   "n": 1,
+   "name": "Reaction tube"
+  },
+  {
+   "n": 2,
+   "name": "Thermocycler"
+  },
+  {
+   "n": 3,
+   "name": "Heating block"
+  },
+  {
+   "n": 4,
+   "name": "Display"
+  },
+  {
+   "n": 5,
+   "name": "DNA template"
+  },
+  {
+   "n": 6,
+   "name": "Hydrogen bonds"
+  },
+  {
+   "n": 7,
+   "name": "Primers"
+  },
+  {
+   "n": 8,
+   "name": "DNA polymerase"
+  },
+  {
+   "n": 9,
+   "name": "Nucleotides"
+  },
+  {
+   "n": 10,
+   "name": "New DNA strand"
+  },
+  {
+   "n": 11,
+   "name": "Salts"
+  }
+ ],
+ "wordBoxOrder": [
+  "Hydrogen bonds",
+  "Thermocycler",
+  "Primers",
+  "Nucleotides",
+  "Salts",
+  "Reaction tube",
+  "DNA polymerase",
+  "Display",
+  "New DNA strand",
+  "Heating block",
+  "DNA template"
+ ],
+ "detail": {
+  "text": "Here you can see the steps in more detail. These pictures show the stations of the video. Check that you can find every numbered part in the stations.",
+  "images": [
+   "/pcr/sheet/page-2.jpg"
+  ],
+  "alt": "Pictures of the stations of the video, with the numbered parts listed for each station."
+ }
+}

@@ -30,8 +30,25 @@
     var tb=document.getElementById("topbar");
     if(tb&&window.ResizeObserver)new ResizeObserver(syncTop).observe(tb);
     if(document.fonts&&document.fonts.ready)document.fonts.ready.then(syncTop);
-    var pic=el("img","dnd-pic"); pic.src=d.picture; pic.alt=d.pictureAlt||""; if(d.pictureSize){pic.width=d.pictureSize[0];pic.height=d.pictureSize[1]} top.appendChild(pic);
-
+    var pics=d.pictures&&d.pictures.length?d.pictures:[{src:d.picture,alt:d.pictureAlt||"",size:d.pictureSize}];
+    var pic=el("img","dnd-pic");
+    function showPic(i){var p=pics[i];pic.src=p.src;pic.alt=p.alt||"";
+      if(p.size){pic.width=p.size[0];pic.height=p.size[1]}else{pic.removeAttribute("width");pic.removeAttribute("height")}}
+    if(pics.length>1){
+      var tabs=el("div","dnd-tabs"); tabs.setAttribute("role","tablist"); var tbtn=[];
+      pics.forEach(function(p,i){
+        var t=el("button","dnd-tab",p.label||("View "+(i+1))); t.type="button"; t.setAttribute("role","tab");
+        t.addEventListener("click",function(){tbtn.forEach(function(x,j){x.setAttribute("aria-selected",j===i?"true":"false")});showPic(i)});
+        tbtn.push(t); tabs.appendChild(t); (new Image()).src=p.src;
+      });
+      tbtn[0].setAttribute("aria-selected","true"); tbtn.slice(1).forEach(function(x){x.setAttribute("aria-selected","false")});
+      top.appendChild(tabs);
+    }
+    /* wide, flat pictures can be short; taller pictures need more height so the numbers stay readable */
+    function fit(){var r=pic.naturalWidth&&pic.naturalHeight?pic.naturalWidth/pic.naturalHeight:3.5;
+      pic.style.maxHeight=r>=3.2?"min(22vh,220px)":"min(30vh,300px)"}
+    pic.addEventListener("load",fit);
+    showPic(0); top.appendChild(pic);
     var box=el("div","dnd-box"); box.appendChild(el("h2","","Word box"));
     var chips=el("div","dnd-chips"); chips.setAttribute("role","group"); chips.setAttribute("aria-label","Word box");
     box.appendChild(chips);
@@ -67,7 +84,7 @@
     if(d.detail){
       var det=el("div","dnd-detail"); det.appendChild(el("h2","", "Look at the steps in more detail"));
       det.appendChild(el("p","",d.detail.text));
-      var di=el("img","dnd-pic"); di.src=d.detail.image; di.alt=d.detail.alt||""; det.appendChild(di);
+      (d.detail.images||[d.detail.image]).forEach(function(src){var di=el("img","dnd-pic"); di.src=src; di.alt=d.detail.alt||""; det.appendChild(di)});
       root.appendChild(det);
     }
 

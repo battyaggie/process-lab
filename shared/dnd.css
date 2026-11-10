@@ -29,3 +29,7 @@
 .dnd-detail{display:flex;flex-direction:column;gap:10px}
 .dnd-detail p{margin:0;max-width:62ch}
 @media (max-width:640px){.dnd-table td.nm{width:42%}}
+.dnd-tabs{display:flex;gap:6px;justify-content:center;flex-wrap:wrap}
+.dnd-tab{font-family:var(--display);font-weight:600;font-size:15px;color:var(--fg);background:var(--panel);border:1.5px solid var(--line);border-radius:6px;padding:3px 14px;cursor:pointer}
+.dnd-tab[aria-selected="true"]{background:var(--fg);color:var(--bg);border-color:var(--fg)}
+.dnd-tab:focus-visible{outline:3px solid var(--accent);outline-offset:2px}

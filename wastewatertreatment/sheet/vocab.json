@@ -1,0 +1,89 @@
+{
+ "storageKey": "wastewatertreatment-vocab",
+ "pictures": [
+  {
+   "src": "/wastewatertreatment/sheet/view-1.jpg",
+   "label": "View 1",
+   "alt": "Numbered picture of the process, view 1 of 2.",
+   "size": [
+    1038,
+    234
+   ]
+  },
+  {
+   "src": "/wastewatertreatment/sheet/view-2.jpg",
+   "label": "View 2",
+   "alt": "Numbered picture of the process, view 2 of 2.",
+   "size": [
+    1038,
+    233
+   ]
+  }
+ ],
+ "parts": [
+  {
+   "n": 1,
+   "name": "Bar screen"
+  },
+  {
+   "n": 2,
+   "name": "Grit chamber"
+  },
+  {
+   "n": 3,
+   "name": "Primary clarifier"
+  },
+  {
+   "n": 4,
+   "name": "Aeration tank"
+  },
+  {
+   "n": 5,
+   "name": "Blower"
+  },
+  {
+   "n": 6,
+   "name": "Diffusers"
+  },
+  {
+   "n": 7,
+   "name": "Secondary clarifier"
+  },
+  {
+   "n": 8,
+   "name": "Return sludge pump"
+  },
+  {
+   "n": 9,
+   "name": "Sludge digester"
+  },
+  {
+   "n": 10,
+   "name": "UV disinfection unit"
+  },
+  {
+   "n": 11,
+   "name": "Outfall"
+  }
+ ],
+ "wordBoxOrder": [
+  "Diffusers",
+  "Primary clarifier",
+  "Blower",
+  "Outfall",
+  "Bar screen",
+  "Sludge digester",
+  "Aeration tank",
+  "UV disinfection unit",
+  "Grit chamber",
+  "Return sludge pump",
+  "Secondary clarifier"
+ ],
+ "detail": {
+  "text": "Here you can see the steps in more detail. These pictures show the stations of the video. Check that you can find every numbered part in the stations.",
+  "images": [
+   "/wastewatertreatment/sheet/page-2.jpg"
+  ],
+  "alt": "Pictures of the stations of the video, with the numbered parts listed for each station."
+ }
+}

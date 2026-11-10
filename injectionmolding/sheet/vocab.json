@@ -1,0 +1,90 @@
+{
+ "storageKey": "injectionmolding-vocab",
+ "pictures": [
+  {
+   "src": "/injectionmolding/sheet/view-1.jpg",
+   "label": "View 1",
+   "alt": "Numbered picture of the process, view 1 of 2.",
+   "size": [
+    1215,
+    531
+   ]
+  },
+  {
+   "src": "/injectionmolding/sheet/view-2.jpg",
+   "label": "View 2",
+   "alt": "Numbered picture of the process, view 2 of 2.",
+   "size": [
+    1215,
+    639
+   ]
+  }
+ ],
+ "parts": [
+  {
+   "n": 1,
+   "name": "Hopper"
+  },
+  {
+   "n": 2,
+   "name": "Barrel"
+  },
+  {
+   "n": 3,
+   "name": "Screw"
+  },
+  {
+   "n": 4,
+   "name": "Heater bands"
+  },
+  {
+   "n": 5,
+   "name": "Nozzle"
+  },
+  {
+   "n": 6,
+   "name": "Clamping unit"
+  },
+  {
+   "n": 7,
+   "name": "Mold"
+  },
+  {
+   "n": 8,
+   "name": "Cooling channels"
+  },
+  {
+   "n": 9,
+   "name": "Ejector pins"
+  },
+  {
+   "n": 10,
+   "name": "Take-out robot"
+  },
+  {
+   "n": 11,
+   "name": "Conveyor"
+  }
+ ],
+ "wordBoxOrder": [
+  "Cooling channels",
+  "Screw",
+  "Conveyor",
+  "Hopper",
+  "Clamping unit",
+  "Ejector pins",
+  "Barrel",
+  "Take-out robot",
+  "Heater bands",
+  "Mold",
+  "Nozzle"
+ ],
+ "detail": {
+  "text": "Here you can see the steps in more detail. These pictures show the stations of the video. Check that you can find every numbered part in the stations.",
+  "images": [
+   "/injectionmolding/sheet/page-2.jpg",
+   "/injectionmolding/sheet/page-3.jpg"
+  ],
+  "alt": "Pictures of the stations of the video, with the numbered parts listed for each station."
+ }
+}

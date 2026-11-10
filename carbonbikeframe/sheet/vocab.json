@@ -1,0 +1,85 @@
+{
+ "storageKey": "carbonbikeframe-vocab",
+ "pictures": [
+  {
+   "src": "/carbonbikeframe/sheet/view-1.jpg",
+   "label": "View 1",
+   "alt": "Numbered picture of the process, view 1 of 2.",
+   "size": [
+    1215,
+    356
+   ]
+  },
+  {
+   "src": "/carbonbikeframe/sheet/view-2.jpg",
+   "label": "View 2",
+   "alt": "Numbered picture of the process, view 2 of 2.",
+   "size": [
+    1215,
+    355
+   ]
+  }
+ ],
+ "parts": [
+  {
+   "n": 1,
+   "name": "Freezer"
+  },
+  {
+   "n": 2,
+   "name": "Ply cutter"
+  },
+  {
+   "n": 3,
+   "name": "Layup table"
+  },
+  {
+   "n": 4,
+   "name": "Mold"
+  },
+  {
+   "n": 5,
+   "name": "Bladder"
+  },
+  {
+   "n": 6,
+   "name": "Heated press"
+  },
+  {
+   "n": 7,
+   "name": "Air compressor"
+  },
+  {
+   "n": 8,
+   "name": "Trimming machine"
+  },
+  {
+   "n": 9,
+   "name": "Ultrasonic scanner"
+  },
+  {
+   "n": 10,
+   "name": "Paint booth"
+  }
+ ],
+ "wordBoxOrder": [
+  "Air compressor",
+  "Layup table",
+  "Paint booth",
+  "Freezer",
+  "Bladder",
+  "Trimming machine",
+  "Ply cutter",
+  "Ultrasonic scanner",
+  "Mold",
+  "Heated press"
+ ],
+ "detail": {
+  "text": "Here you can see the steps in more detail. These pictures show the stations of the video. Check that you can find every numbered part in the stations.",
+  "images": [
+   "/carbonbikeframe/sheet/page-2.jpg",
+   "/carbonbikeframe/sheet/page-3.jpg"
+  ],
+  "alt": "Pictures of the stations of the video, with the numbered parts listed for each station."
+ }
+}

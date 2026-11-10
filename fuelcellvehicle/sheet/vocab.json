@@ -1,0 +1,90 @@
+{
+ "storageKey": "fuelcellvehicle-vocab",
+ "pictures": [
+  {
+   "src": "/fuelcellvehicle/sheet/view-1.jpg",
+   "label": "View 1",
+   "alt": "Numbered picture of the process, view 1 of 2.",
+   "size": [
+    1485,
+    661
+   ]
+  },
+  {
+   "src": "/fuelcellvehicle/sheet/view-2.jpg",
+   "label": "View 2",
+   "alt": "Numbered picture of the process, view 2 of 2.",
+   "size": [
+    1485,
+    662
+   ]
+  }
+ ],
+ "parts": [
+  {
+   "n": 1,
+   "name": "Hydrogen tank"
+  },
+  {
+   "n": 2,
+   "name": "Pressure regulator"
+  },
+  {
+   "n": 3,
+   "name": "Air compressor"
+  },
+  {
+   "n": 4,
+   "name": "Fuel cell stack"
+  },
+  {
+   "n": 5,
+   "name": "Exhaust"
+  },
+  {
+   "n": 6,
+   "name": "DC/DC converter"
+  },
+  {
+   "n": 7,
+   "name": "Battery"
+  },
+  {
+   "n": 8,
+   "name": "Inverter"
+  },
+  {
+   "n": 9,
+   "name": "Electric motor"
+  },
+  {
+   "n": 10,
+   "name": "Coolant pump"
+  },
+  {
+   "n": 11,
+   "name": "Radiator"
+  }
+ ],
+ "wordBoxOrder": [
+  "Battery",
+  "Radiator",
+  "Air compressor",
+  "Electric motor",
+  "Hydrogen tank",
+  "Exhaust",
+  "Coolant pump",
+  "Pressure regulator",
+  "DC/DC converter",
+  "Inverter",
+  "Fuel cell stack"
+ ],
+ "detail": {
+  "text": "Here you can see the steps in more detail. These pictures show the stations of the video. Check that you can find every numbered part in the stations.",
+  "images": [
+   "/fuelcellvehicle/sheet/page-2.jpg",
+   "/fuelcellvehicle/sheet/page-3.jpg"
+  ],
+  "alt": "Pictures of the stations of the video, with the numbered parts listed for each station."
+ }
+}

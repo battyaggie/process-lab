@@ -1,0 +1,95 @@
+{
+ "storageKey": "cncmilling-vocab",
+ "pictures": [
+  {
+   "src": "/cncmilling/sheet/view-1.jpg",
+   "label": "View 1",
+   "alt": "Numbered picture of the process, view 1 of 2.",
+   "size": [
+    1485,
+    423
+   ]
+  },
+  {
+   "src": "/cncmilling/sheet/view-2.jpg",
+   "label": "View 2",
+   "alt": "Numbered picture of the process, view 2 of 2.",
+   "size": [
+    1485,
+    743
+   ]
+  }
+ ],
+ "parts": [
+  {
+   "n": 1,
+   "name": "CAD/CAM computer"
+  },
+  {
+   "n": 2,
+   "name": "Controller"
+  },
+  {
+   "n": 3,
+   "name": "Workpiece"
+  },
+  {
+   "n": 4,
+   "name": "Vise"
+  },
+  {
+   "n": 5,
+   "name": "Probe"
+  },
+  {
+   "n": 6,
+   "name": "Tool magazine"
+  },
+  {
+   "n": 7,
+   "name": "Tool changer"
+  },
+  {
+   "n": 8,
+   "name": "Spindle"
+  },
+  {
+   "n": 9,
+   "name": "Machine table"
+  },
+  {
+   "n": 10,
+   "name": "Coolant nozzle"
+  },
+  {
+   "n": 11,
+   "name": "Chip conveyor"
+  },
+  {
+   "n": 12,
+   "name": "Coordinate measuring machine"
+  }
+ ],
+ "wordBoxOrder": [
+  "Machine table",
+  "Vise",
+  "Coordinate measuring machine",
+  "Tool magazine",
+  "CAD/CAM computer",
+  "Coolant nozzle",
+  "Tool changer",
+  "Workpiece",
+  "Chip conveyor",
+  "Probe",
+  "Controller",
+  "Spindle"
+ ],
+ "detail": {
+  "text": "Here you can see the steps in more detail. These pictures show the stations of the video. Check that you can find every numbered part in the stations.",
+  "images": [
+   "/cncmilling/sheet/page-2.jpg",
+   "/cncmilling/sheet/page-3.jpg"
+  ],
+  "alt": "Pictures of the stations of the video, with the numbered parts listed for each station."
+ }
+}

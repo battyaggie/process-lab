@@ -1,0 +1,80 @@
+{
+ "storageKey": "visionpickandplace-vocab",
+ "pictures": [
+  {
+   "src": "/visionpickandplace/sheet/view-1.jpg",
+   "label": "View 1",
+   "alt": "Numbered picture of the process.",
+   "size": [
+    945,
+    473
+   ]
+  }
+ ],
+ "parts": [
+  {
+   "n": 1,
+   "name": "Infeed conveyor"
+  },
+  {
+   "n": 2,
+   "name": "Encoder"
+  },
+  {
+   "n": 3,
+   "name": "Light barrier"
+  },
+  {
+   "n": 4,
+   "name": "PLC"
+  },
+  {
+   "n": 5,
+   "name": "Camera"
+  },
+  {
+   "n": 6,
+   "name": "Vision computer"
+  },
+  {
+   "n": 7,
+   "name": "Robot controller"
+  },
+  {
+   "n": 8,
+   "name": "Robot arm"
+  },
+  {
+   "n": 9,
+   "name": "Gripper"
+  },
+  {
+   "n": 10,
+   "name": "Tray"
+  },
+  {
+   "n": 11,
+   "name": "Light curtain"
+  }
+ ],
+ "wordBoxOrder": [
+  "Robot controller",
+  "Light barrier",
+  "Tray",
+  "Camera",
+  "Infeed conveyor",
+  "Light curtain",
+  "Robot arm",
+  "Encoder",
+  "Vision computer",
+  "PLC",
+  "Gripper"
+ ],
+ "detail": {
+  "text": "Here you can see the steps in more detail. These pictures show the stations of the video. Check that you can find every numbered part in the stations.",
+  "images": [
+   "/visionpickandplace/sheet/page-2.jpg"
+  ],
+  "alt": "Pictures of the stations of the video, with the numbered parts listed for each station."
+ }
+}

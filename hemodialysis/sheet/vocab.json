@@ -1,0 +1,75 @@
+{
+ "storageKey": "hemodialysis-vocab",
+ "pictures": [
+  {
+   "src": "/hemodialysis/sheet/view-1.jpg",
+   "label": "View 1",
+   "alt": "Numbered picture of the process.",
+   "size": [
+    990,
+    365
+   ]
+  }
+ ],
+ "parts": [
+  {
+   "n": 1,
+   "name": "Access needles"
+  },
+  {
+   "n": 2,
+   "name": "Arterial line"
+  },
+  {
+   "n": 3,
+   "name": "Blood pump"
+  },
+  {
+   "n": 4,
+   "name": "Heparin pump"
+  },
+  {
+   "n": 5,
+   "name": "Dialysate mixing unit"
+  },
+  {
+   "n": 6,
+   "name": "Dialyzer"
+  },
+  {
+   "n": 7,
+   "name": "Drain"
+  },
+  {
+   "n": 8,
+   "name": "Air trap"
+  },
+  {
+   "n": 9,
+   "name": "Venous clamp"
+  },
+  {
+   "n": 10,
+   "name": "Venous line"
+  }
+ ],
+ "wordBoxOrder": [
+  "Air trap",
+  "Dialyzer",
+  "Heparin pump",
+  "Access needles",
+  "Venous clamp",
+  "Blood pump",
+  "Drain",
+  "Arterial line",
+  "Dialysate mixing unit",
+  "Venous line"
+ ],
+ "detail": {
+  "text": "Here you can see the steps in more detail. These pictures show the stations of the video. Check that you can find every numbered part in the stations.",
+  "images": [
+   "/hemodialysis/sheet/page-2.jpg"
+  ],
+  "alt": "Pictures of the stations of the video, with the numbered parts listed for each station."
+ }
+}

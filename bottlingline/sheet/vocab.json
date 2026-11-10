@@ -1,0 +1,85 @@
+{
+ "storageKey": "bottlingline-vocab",
+ "pictures": [
+  {
+   "src": "/bottlingline/sheet/view-1.jpg",
+   "label": "View 1",
+   "alt": "Numbered picture of the process.",
+   "size": [
+    1440,
+    423
+   ]
+  }
+ ],
+ "parts": [
+  {
+   "n": 1,
+   "name": "Infeed conveyor"
+  },
+  {
+   "n": 2,
+   "name": "Star wheel"
+  },
+  {
+   "n": 3,
+   "name": "Product tank"
+  },
+  {
+   "n": 4,
+   "name": "Filling valve"
+  },
+  {
+   "n": 5,
+   "name": "Level sensor"
+  },
+  {
+   "n": 6,
+   "name": "Cap feeder"
+  },
+  {
+   "n": 7,
+   "name": "Capping head"
+  },
+  {
+   "n": 8,
+   "name": "Inspection camera"
+  },
+  {
+   "n": 9,
+   "name": "Reject pusher"
+  },
+  {
+   "n": 10,
+   "name": "Labeler"
+  },
+  {
+   "n": 11,
+   "name": "Packer"
+  },
+  {
+   "n": 12,
+   "name": "PLC"
+  }
+ ],
+ "wordBoxOrder": [
+  "PLC",
+  "Cap feeder",
+  "Inspection camera",
+  "Product tank",
+  "Packer",
+  "Infeed conveyor",
+  "Labeler",
+  "Filling valve",
+  "Reject pusher",
+  "Star wheel",
+  "Capping head",
+  "Level sensor"
+ ],
+ "detail": {
+  "text": "Here you can see the steps in more detail. These pictures show the stations of the video. Check that you can find every numbered part in the stations.",
+  "images": [
+   "/bottlingline/sheet/page-2.jpg"
+  ],
+  "alt": "Pictures of the stations of the video, with the numbered parts listed for each station."
+ }
+}
