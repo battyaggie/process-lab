@@ -219,5 +219,14 @@
         "url": "/gaitanalysis/lecturer-cc817b4104ee/gaitanalysis-lecturer-guide.docx"
       }
     ]
+  },
+  "ordertocash": {
+    "manual": "/ordertocash/lecturer-56eecc04a523/",
+    "docs": [
+      {
+        "title": "One-page guide (Word)",
+        "url": "/ordertocash/lecturer-56eecc04a523/ordertocash-lecturer-guide.docx"
+      }
+    ]
   }
 }

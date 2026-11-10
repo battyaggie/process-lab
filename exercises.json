@@ -311,6 +311,17 @@
         "human-factors-and-sports-engineering",
         "biomedical-engineering"
       ]
+    },
+    {
+      "id": "ordertocash",
+      "title": "From customer order to payment: the order-to-cash process in an ERP system",
+      "summary": "Order to cash in an ERP system, seven stations.",
+      "path": "/ordertocash/",
+      "stations": 7,
+      "programmes": [
+        "wirtschaftsinformatik",
+        "internationales-wirtschaftsingenieurwesen"
+      ]
     }
   ]
 }
