@@ -20,6 +20,8 @@ input:focus-visible,.btn:focus-visible,a:focus-visible{outline:3px solid var(--a
 .row{display:flex;gap:12px;align-items:center;flex-wrap:wrap}
 .err{color:#c1440e}
 #wf{width:100%;height:min(70vh,640px);min-height:480px;border:1.5px solid var(--line);border-radius:8px;background:#fff}
+.grp{background:var(--panel);border:2px solid var(--accent);border-radius:8px;padding:14px 18px}
+.grp b{font:600 22px "Barlow Semi Condensed",sans-serif}
 .small{font-size:13px;color:var(--muted)}
 .small a{color:var(--muted)}
 [hidden]{display:none!important}
@@ -48,6 +50,7 @@ input:focus-visible,.btn:focus-visible,a:focus-visible{outline:3px solid var(--a
       <button class="btn quiet" id="change" type="button">Change class code</button>
     </div>
   </div>
+  <div class="grp" id="grp" role="status" aria-live="polite" hidden></div>
   <iframe id="wf" title="Join the writing group" allow="clipboard-read; clipboard-write"></iframe>
   <p class="small">Your class code is remembered on this device, so the writing area in the exercises opens ready for you.</p>
 </section>
@@ -73,6 +76,15 @@ input:focus-visible,.btn:focus-visible,a:focus-visible{outline:3px solid var(--a
   });
   $("change").addEventListener("click",function(){set("");$("code").value="";show("")});
   $("skip").addEventListener("click",function(){try{sessionStorage.setItem("pl-skip","1")}catch(e){}});
+  window.addEventListener("message",function(e){
+    if(e.origin!=="https://collab-writing-app-battyaggie.vercel.app"||!e.data||e.data.type!=="pl-group"||!e.data.group)return;
+    var g=$("grp"),m=Array.isArray(e.data.members)?e.data.members:[];
+    g.textContent="";
+    var b=document.createElement("b");b.textContent="Your group: "+e.data.group;g.appendChild(b);
+    var p=document.createElement("p");p.style.color="var(--fg)";
+    p.textContent=m.length?"You and "+m.join(", "):"Your teacher may still add people.";
+    g.appendChild(p);g.hidden=false;
+  });
   show(get());
 })();
 </script>
