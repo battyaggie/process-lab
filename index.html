@@ -41,6 +41,8 @@ p{margin:0;color:var(--muted)}
 </main>
 <script>
 (function(){
+  try{if(!localStorage.getItem('pl-code')&&!sessionStorage.getItem('pl-skip')&&location.search.indexOf('skip=1')<0){location.replace('/lobby/');return}
+  if(location.search.indexOf('skip=1')>-1)sessionStorage.setItem('pl-skip','1')}catch(e){}
   var s1=document.getElementById('step1'), s2=document.getElementById('step2');
   var pbox=document.getElementById('programmes'), ebox=document.getElementById('exercises');
   var ptitle=document.getElementById('ptitle'), data=null;
