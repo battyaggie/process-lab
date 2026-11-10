@@ -1,7 +1,9 @@
 /* Shared drag-and-drop vocabulary exercise. Uses the host page's colour variables. */
 .dnd{display:flex;flex-direction:column;gap:16px}
 .dnd-pic{width:100%;height:auto;border:1.5px solid var(--line);border-radius:6px;background:#fff;display:block}
-.dnd-box{background:var(--panel);border:1.5px solid var(--line);border-radius:8px;padding:8px 12px;position:sticky;top:64px;z-index:5}
+.dnd-top{position:sticky;top:62px;z-index:5;background:var(--bg);padding:6px 0 8px;display:flex;flex-direction:column;gap:8px;border-bottom:1.5px solid var(--line)}
+.dnd-top .dnd-pic{width:auto;height:auto;max-width:100%;max-height:min(22vh,220px);margin:0 auto}
+.dnd-box{background:var(--panel);border:1.5px solid var(--line);border-radius:8px;padding:8px 12px}
 .dnd-box h2{display:none}
 .dnd-chips{display:flex;flex-wrap:wrap;gap:6px;min-height:32px}
 .dnd-chip{font:inherit;font-weight:600;color:var(--fg);background:var(--bg);border:1.5px solid var(--stage,var(--line));border-radius:20px;padding:3px 12px;font-size:15px;cursor:grab;touch-action:manipulation;user-select:none}
@@ -26,4 +28,4 @@
 .dnd-do{width:100%;font:inherit;color:var(--fg);background:var(--bg);border:1.5px solid var(--line);border-radius:6px;padding:8px 10px;min-height:40px}
 .dnd-detail{display:flex;flex-direction:column;gap:10px}
 .dnd-detail p{margin:0;max-width:62ch}
-@media (max-width:640px){.dnd-table td.nm{width:42%}.dnd-box{top:96px}}
+@media (max-width:640px){.dnd-table td.nm{width:42%}.dnd-top{top:134px}}

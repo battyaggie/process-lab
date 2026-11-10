@@ -23,14 +23,15 @@
 
     root.textContent=""; root.className="dnd";
     if(d.intro&&d.showIntro)root.appendChild(el("p","lead",d.intro));
-    var pic=el("img","dnd-pic"); pic.src=d.picture; pic.alt=d.pictureAlt||""; if(d.pictureSize){pic.width=d.pictureSize[0];pic.height=d.pictureSize[1]} root.appendChild(pic);
+    var top=el("div","dnd-top"); root.appendChild(top);
+    var pic=el("img","dnd-pic"); pic.src=d.picture; pic.alt=d.pictureAlt||""; if(d.pictureSize){pic.width=d.pictureSize[0];pic.height=d.pictureSize[1]} top.appendChild(pic);
 
     var box=el("div","dnd-box"); box.appendChild(el("h2","","Word box"));
     var chips=el("div","dnd-chips"); chips.setAttribute("role","group"); chips.setAttribute("aria-label","Word box");
     box.appendChild(chips);
     var status=el("p","dnd-status"); status.setAttribute("role","status"); status.setAttribute("aria-live","polite"); box.appendChild(status);
     var again=el("button","btn quiet","Start again"); again.type="button";
-    root.appendChild(box);
+    top.appendChild(box);
 
     var table=el("table","dnd-table"); var thead=el("thead"); var hr=el("tr");
     ["No.","Name of the part","What does it do?"].forEach(function(h){hr.appendChild(el("th","",h))});
