@@ -67,6 +67,7 @@ details#how .more{margin:6px 0 0;font-size:14px}
 .nobak{margin:0;font-size:14px;color:var(--muted);flex:1 1 280px;min-width:0}
 .nobak strong{color:var(--fg)}
 body{padding-top:0}
+.wrap.compact{gap:8px}.wrap.compact h1{font-size:clamp(22px,3.2vw,28px)}.wrap.compact .lead{font-size:14px}.wrap.compact details#how{max-width:none;padding:4px 14px;margin-top:2px}.wrap.compact details#how summary{font-size:16px}
 footer{display:flex;gap:12px;align-items:center;flex-wrap:wrap;color:var(--muted);font-size:13px}
 @media (max-width:520px){.tile .s{display:none}.tile .n{font-size:24px}.tiles{gap:5px}}
 </style>
@@ -227,14 +228,14 @@ footer{display:flex;gap:12px;align-items:center;flex-wrap:wrap;color:var(--muted
     var d=$("how"), b=$("howbody"); b.textContent="";
     var items=HOW[key]; if(!items){d.hidden=true;return}
     items.forEach(function(t){var li=document.createElement("li");li.textContent=t;b.appendChild(li)});
-    d.hidden=false; d.open=(key==="vocab"||key==="blind-role");
+    d.hidden=false; d.open=(key==="blind-role");
   }
   function route(){
     var raw=(location.hash||"").replace("#","");
     var h=raw, view="";
     if(raw==="blind-hand"||raw==="blind-voice"){h="blind";view=raw.split("-")[1]}
     $("sheet").hidden=true; $("role").hidden=true; $("choose").hidden=true; $("player").hidden=true; setWriter(false);
-    $("cols").classList.remove("split"); $("app").classList.remove("wide");
+    $("cols").classList.remove("split"); $("app").classList.remove("wide"); $("app").classList.remove("compact");
     try{v.pause()}catch(e){}
     $("how").hidden=true;
     if(!MODES[h]){
@@ -245,7 +246,7 @@ footer{display:flex;gap:12px;align-items:center;flex-wrap:wrap;color:var(--muted
     mode=h; var m=MODES[h]; done=doneSet();
     $("kicker").textContent=m.kicker; $("title").textContent=m.title; $("lead").textContent=m.lead; $("hint").textContent=m.hint;
     $("reset-wrap").hidden=m.free; modesNav();
-    if(m.sheet){$("sheet").hidden=false;showHow("vocab");
+    if(m.sheet){$("sheet").hidden=false;$("app").classList.add("compact");showHow("vocab");
       if(!$("dndroot").dataset.ready){$("dndroot").dataset.ready="1";DragDropVocab.mount($("dndroot"),"/claus/sheet/vocab.json")}return}
     if(h==="blind"&&!view){$("role").hidden=false;showHow("blind-role");return}
     if(h==="blind"&&view==="voice"){ $("reset-wrap").hidden=true;
