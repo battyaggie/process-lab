@@ -24,6 +24,12 @@
     root.textContent=""; root.className="dnd";
     if(d.intro&&d.showIntro)root.appendChild(el("p","lead",d.intro));
     var top=el("div","dnd-top"); root.appendChild(top);
+    /* keep the pinned frame directly below the page's sticky header, whatever its height */
+    function syncTop(){var t=document.getElementById("topbar");root.style.setProperty("--dnd-top",(t?Math.ceil(t.getBoundingClientRect().height):0)+"px")}
+    syncTop(); window.addEventListener("resize",syncTop);
+    var tb=document.getElementById("topbar");
+    if(tb&&window.ResizeObserver)new ResizeObserver(syncTop).observe(tb);
+    if(document.fonts&&document.fonts.ready)document.fonts.ready.then(syncTop);
     var pic=el("img","dnd-pic"); pic.src=d.picture; pic.alt=d.pictureAlt||""; if(d.pictureSize){pic.width=d.pictureSize[0];pic.height=d.pictureSize[1]} top.appendChild(pic);
 
     var box=el("div","dnd-box"); box.appendChild(el("h2","","Word box"));
