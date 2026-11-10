@@ -1,0 +1,29 @@
+/* Shared drag-and-drop vocabulary exercise. Uses the host page's colour variables. */
+.dnd{display:flex;flex-direction:column;gap:16px}
+.dnd-pic{width:100%;height:auto;border:1.5px solid var(--line);border-radius:6px;background:#fff;display:block}
+.dnd-box{background:var(--panel);border:1.5px solid var(--line);border-radius:8px;padding:8px 12px;position:sticky;top:64px;z-index:5}
+.dnd-box h2{display:none}
+.dnd-chips{display:flex;flex-wrap:wrap;gap:6px;min-height:32px}
+.dnd-chip{font:inherit;font-weight:600;color:var(--fg);background:var(--bg);border:1.5px solid var(--stage,var(--line));border-radius:20px;padding:3px 12px;font-size:15px;cursor:grab;touch-action:manipulation;user-select:none}
+.dnd-chip[aria-pressed="true"]{outline:3px solid var(--accent);outline-offset:1px}
+.dnd-chip.dragging{opacity:.4}
+.dnd-chip:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.dnd-status{min-height:1.4em;margin:6px 0 0;color:var(--muted);font-size:15px}
+.dnd-status.good{color:var(--done);font-weight:600}
+.dnd-table{width:100%;border-collapse:collapse;background:var(--panel);border:1.5px solid var(--line)}
+.dnd-table th{font-family:var(--display);text-align:left;background:var(--stage,#4d6073);color:#fff;padding:8px 10px}
+.dnd-table td{border-top:1px solid var(--line);padding:6px 8px;vertical-align:middle}
+.dnd-table td.no{width:48px;font-family:var(--display);font-weight:700;font-size:20px}
+.dnd-table td.nm{width:34%}
+.dnd-cell{min-height:40px;display:flex;align-items:center;padding:4px 10px;border:2px dashed var(--line);border-radius:6px;color:var(--muted);cursor:pointer}
+.dnd-cell:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.dnd-cell.over{border-color:var(--accent);background:rgba(184,134,11,.12)}
+.dnd-cell.ok{border:2px solid var(--done);border-style:solid;color:var(--fg);font-weight:600;cursor:default;background:rgba(59,125,90,.14)}
+.dnd-cell.ok::after{content:"\2713";margin-left:auto;color:var(--done);font-weight:700}
+.dnd-cell.bad{border-color:#b3412f;background:rgba(179,65,47,.14);animation:dndshake .35s}
+@keyframes dndshake{20%{transform:translateX(-6px)}40%{transform:translateX(6px)}60%{transform:translateX(-4px)}80%{transform:translateX(4px)}}
+@media (prefers-reduced-motion:reduce){.dnd-cell.bad{animation:none}}
+.dnd-do{width:100%;font:inherit;color:var(--fg);background:var(--bg);border:1.5px solid var(--line);border-radius:6px;padding:8px 10px;min-height:40px}
+.dnd-detail{display:flex;flex-direction:column;gap:10px}
+.dnd-detail p{margin:0;max-width:62ch}
+@media (max-width:640px){.dnd-table td.nm{width:42%}.dnd-box{top:96px}}

@@ -1,0 +1,74 @@
+{
+  "storageKey": "claus-vocab",
+  "picture": "/claus/sheet/process.jpg",
+  "pictureAlt": "Model of a sulfur recovery plant with the parts numbered 1 to 11. Parts 5, 6 and 7 appear several times but have one name each.",
+  "intro": "Look at the picture. Each part has a number. Parts 5, 6 and 7 appear more than once, but they have one name only. Drag each name from the word box into the correct row of the table. You see at once if it is right. Then write in your own words what each part does.",
+  "parts": [
+    {
+      "n": 1,
+      "name": "Acid gas tank"
+    },
+    {
+      "n": 2,
+      "name": "Air blower"
+    },
+    {
+      "n": 3,
+      "name": "Reaction furnace"
+    },
+    {
+      "n": 4,
+      "name": "Waste heat boiler"
+    },
+    {
+      "n": 5,
+      "name": "Sulfur condenser"
+    },
+    {
+      "n": 6,
+      "name": "Reheater"
+    },
+    {
+      "n": 7,
+      "name": "Catalytic reactor"
+    },
+    {
+      "n": 8,
+      "name": "Sulfur pit"
+    },
+    {
+      "n": 9,
+      "name": "Tail gas treatment unit"
+    },
+    {
+      "n": 10,
+      "name": "Stack"
+    },
+    {
+      "n": 11,
+      "name": "Steam drum"
+    }
+  ],
+  "wordBoxOrder": [
+    "Stack",
+    "Reheater",
+    "Acid gas tank",
+    "Steam drum",
+    "Waste heat boiler",
+    "Air blower",
+    "Sulfur pit",
+    "Catalytic reactor",
+    "Reaction furnace",
+    "Tail gas treatment unit",
+    "Sulfur condenser"
+  ],
+  "detail": {
+    "text": "Here you can see the steps in more detail. These pictures show the seven stations of the video. Check that you can find every numbered part in the stations.",
+    "image": "/claus/sheet/page-2.jpg",
+    "alt": "Pictures of the seven stations: station 1 (parts 1, 2, 3), station 2 (parts 4, 11), station 3 (part 5), station 4 (part 6), station 5 (part 7), station 6 (part 8), station 7 (parts 9, 10)."
+  },
+  "pictureSize": [
+    1600,
+    420
+  ]
+}
