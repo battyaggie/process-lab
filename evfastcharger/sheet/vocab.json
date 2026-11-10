@@ -1,0 +1,89 @@
+{
+ "storageKey": "evfastcharger-vocab",
+ "pictures": [
+  {
+   "src": "/evfastcharger/sheet/view-1.jpg",
+   "label": "View 1",
+   "alt": "Numbered picture of the charging station and the car, view 1 of 2.",
+   "size": [
+    1200,
+    368
+   ]
+  },
+  {
+   "src": "/evfastcharger/sheet/view-2.jpg",
+   "label": "View 2",
+   "alt": "Numbered picture of the charging station and the car, view 2 of 2.",
+   "size": [
+    1200,
+    368
+   ]
+  }
+ ],
+ "parts": [
+  {
+   "n": 1,
+   "name": "Transformer"
+  },
+  {
+   "n": 2,
+   "name": "Rectifier"
+  },
+  {
+   "n": 3,
+   "name": "PFC stage"
+  },
+  {
+   "n": 4,
+   "name": "DC link capacitor"
+  },
+  {
+   "n": 5,
+   "name": "DC/DC converter"
+  },
+  {
+   "n": 6,
+   "name": "Charge controller"
+  },
+  {
+   "n": 7,
+   "name": "Contactor"
+  },
+  {
+   "n": 8,
+   "name": "Charging cable"
+  },
+  {
+   "n": 9,
+   "name": "Battery management system"
+  },
+  {
+   "n": 10,
+   "name": "Battery"
+  },
+  {
+   "n": 11,
+   "name": "Cooling system"
+  }
+ ],
+ "wordBoxOrder": [
+  "Contactor",
+  "Battery",
+  "Rectifier",
+  "Cooling system",
+  "Transformer",
+  "DC/DC converter",
+  "Battery management system",
+  "PFC stage",
+  "Charging cable",
+  "DC link capacitor",
+  "Charge controller"
+ ],
+ "detail": {
+  "text": "Here you can see the steps in more detail. These pictures show the stations of the video. Check that you can find every numbered part in the stations.",
+  "images": [
+   "/evfastcharger/sheet/page-2.jpg"
+  ],
+  "alt": "Pictures of the stations of the video, with the numbered parts listed for each station."
+ }
+}

@@ -228,5 +228,14 @@
         "url": "/ordertocash/lecturer-56eecc04a523/ordertocash-lecturer-guide.docx"
       }
     ]
+  },
+  "evfastcharger": {
+    "manual": "/evfastcharger/lecturer-e8bb00474cc4/",
+    "docs": [
+      {
+        "title": "One-page guide (Word)",
+        "url": "/evfastcharger/lecturer-e8bb00474cc4/evfastcharger-lecturer-guide.docx"
+      }
+    ]
   }
 }

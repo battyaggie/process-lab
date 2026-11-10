@@ -322,6 +322,18 @@
         "wirtschaftsinformatik",
         "internationales-wirtschaftsingenieurwesen"
       ]
+    },
+    {
+      "id": "evfastcharger",
+      "title": "DC fast charging of an electric car: from the grid to the battery",
+      "summary": "DC fast charging of an electric car, seven stations.",
+      "path": "/evfastcharger/",
+      "stations": 7,
+      "programmes": [
+        "elektronik",
+        "erneuerbare-energien",
+        "wasserstofftechnik"
+      ]
     }
   ]
 }
