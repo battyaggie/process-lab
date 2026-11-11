@@ -355,6 +355,16 @@
         "informatik",
         "wirtschaftsinformatik"
       ]
+    },
+    {
+      "id": "voipcall",
+      "title": "Making a phone call over the internet (VoIP)",
+      "summary": "VoIP call, six stations.",
+      "path": "/voipcall/",
+      "stations": 6,
+      "programmes": [
+        "informations-und-kommunikationssysteme"
+      ]
     }
   ]
 }

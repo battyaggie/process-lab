@@ -255,5 +255,14 @@
         "url": "/cicdpipeline/lecturer-6d020e9280b2/cicdpipeline-lecturer-guide.docx"
       }
     ]
+  },
+  "voipcall": {
+    "manual": "/voipcall/lecturer-0a2a45c95a9b/",
+    "docs": [
+      {
+        "title": "One-page guide (Word)",
+        "url": "/voipcall/lecturer-0a2a45c95a9b/voipcall-lecturer-guide.docx"
+      }
+    ]
   }
 }
