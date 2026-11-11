@@ -246,5 +246,14 @@
         "url": "/pumpedstorage/lecturer-2820040d494a/pumpedstorage-lecturer-guide.docx"
       }
     ]
+  },
+  "cicdpipeline": {
+    "manual": "/cicdpipeline/lecturer-6d020e9280b2/",
+    "docs": [
+      {
+        "title": "One-page guide (Word)",
+        "url": "/cicdpipeline/lecturer-6d020e9280b2/cicdpipeline-lecturer-guide.docx"
+      }
+    ]
   }
 }

@@ -1,0 +1,84 @@
+{
+ "storageKey": "cicdpipeline-vocab",
+ "pictures": [
+  {
+   "src": "/cicdpipeline/sheet/view-1.jpg",
+   "label": "View 1",
+   "alt": "Numbered picture of the process, view 1 of 2.",
+   "size": [
+    1100,
+    346
+   ]
+  },
+  {
+   "src": "/cicdpipeline/sheet/view-2.jpg",
+   "label": "View 2",
+   "alt": "Numbered picture of the process, view 2 of 2.",
+   "size": [
+    1100,
+    346
+   ]
+  }
+ ],
+ "parts": [
+  {
+   "n": 1,
+   "name": "Developer laptop"
+  },
+  {
+   "n": 2,
+   "name": "Git repository"
+  },
+  {
+   "n": 3,
+   "name": "CI server"
+  },
+  {
+   "n": 4,
+   "name": "Build agent"
+  },
+  {
+   "n": 5,
+   "name": "Test runner"
+  },
+  {
+   "n": 6,
+   "name": "Artifact registry"
+  },
+  {
+   "n": 7,
+   "name": "Staging environment"
+  },
+  {
+   "n": 8,
+   "name": "Approval gate"
+  },
+  {
+   "n": 9,
+   "name": "Production server"
+  },
+  {
+   "n": 10,
+   "name": "Monitoring dashboard"
+  }
+ ],
+ "wordBoxOrder": [
+  "Production server",
+  "Test runner",
+  "CI server",
+  "Monitoring dashboard",
+  "Build agent",
+  "Staging environment",
+  "Developer laptop",
+  "Artifact registry",
+  "Approval gate",
+  "Git repository"
+ ],
+ "detail": {
+  "text": "Here you can see the steps in more detail. These pictures show the stations of the video. Check that you can find every numbered part in the stations.",
+  "images": [
+   "/cicdpipeline/sheet/page-2.jpg"
+  ],
+  "alt": "Pictures of the stations of the video, with the numbered parts listed for each station."
+ }
+}

@@ -344,6 +344,17 @@
       "programmes": [
         "erneuerbare-energien"
       ]
+    },
+    {
+      "id": "cicdpipeline",
+      "title": "From a code change to a running application: a CI/CD pipeline",
+      "summary": "CI/CD pipeline, seven stations.",
+      "path": "/cicdpipeline/",
+      "stations": 7,
+      "programmes": [
+        "informatik",
+        "wirtschaftsinformatik"
+      ]
     }
   ]
 }
