@@ -1,0 +1,84 @@
+{
+ "storageKey": "kanbanloop-vocab",
+ "pictures": [
+  {
+   "src": "/kanbanloop/sheet/view-1.jpg",
+   "label": "View 1",
+   "alt": "Numbered picture of the process, view 1 of 2.",
+   "size": [
+    1100,
+    532
+   ]
+  },
+  {
+   "src": "/kanbanloop/sheet/view-2.jpg",
+   "label": "View 2",
+   "alt": "Numbered picture of the process, view 2 of 2.",
+   "size": [
+    1100,
+    532
+   ]
+  }
+ ],
+ "parts": [
+  {
+   "n": 1,
+   "name": "Final assembly station"
+  },
+  {
+   "n": 2,
+   "name": "Supermarket"
+  },
+  {
+   "n": 3,
+   "name": "Kanban box"
+  },
+  {
+   "n": 4,
+   "name": "Kanban card"
+  },
+  {
+   "n": 5,
+   "name": "Collection point"
+  },
+  {
+   "n": 6,
+   "name": "Tugger train"
+  },
+  {
+   "n": 7,
+   "name": "Kanban board"
+  },
+  {
+   "n": 8,
+   "name": "Machining cell"
+  },
+  {
+   "n": 9,
+   "name": "Quality check station"
+  },
+  {
+   "n": 10,
+   "name": "Staging area"
+  }
+ ],
+ "wordBoxOrder": [
+  "Tugger train",
+  "Collection point",
+  "Kanban card",
+  "Staging area",
+  "Machining cell",
+  "Supermarket",
+  "Kanban board",
+  "Final assembly station",
+  "Quality check station",
+  "Kanban box"
+ ],
+ "detail": {
+  "text": "Here you can see the steps in more detail. These pictures show the stations of the video. Check that you can find every numbered part in the stations.",
+  "images": [
+   "/kanbanloop/sheet/page-2.jpg"
+  ],
+  "alt": "Pictures of the stations of the video, with the numbered parts listed for each station."
+ }
+}

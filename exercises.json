@@ -365,6 +365,17 @@
       "programmes": [
         "informations-und-kommunikationssysteme"
       ]
+    },
+    {
+      "id": "kanbanloop",
+      "title": "Supplying an assembly line: a Kanban pull system",
+      "summary": "Kanban loop, six stations.",
+      "path": "/kanbanloop/",
+      "stations": 6,
+      "programmes": [
+        "internationales-wirtschaftsingenieurwesen",
+        "maschinenbau"
+      ]
     }
   ]
 }

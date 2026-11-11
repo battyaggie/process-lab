@@ -264,5 +264,14 @@
         "url": "/voipcall/lecturer-0a2a45c95a9b/voipcall-lecturer-guide.docx"
       }
     ]
+  },
+  "kanbanloop": {
+    "manual": "/kanbanloop/lecturer-e13dbe9b39d8/",
+    "docs": [
+      {
+        "title": "One-page guide (Word)",
+        "url": "/kanbanloop/lecturer-e13dbe9b39d8/kanbanloop-lecturer-guide.docx"
+      }
+    ]
   }
 }
