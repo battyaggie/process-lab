@@ -334,6 +334,16 @@
         "erneuerbare-energien",
         "wasserstofftechnik"
       ]
+    },
+    {
+      "id": "pumpedstorage",
+      "title": "Storing energy with water: a pumped-storage power plant",
+      "summary": "Pumped-storage power plant, six stations.",
+      "path": "/pumpedstorage/",
+      "stations": 6,
+      "programmes": [
+        "erneuerbare-energien"
+      ]
     }
   ]
 }

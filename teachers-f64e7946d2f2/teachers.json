@@ -237,5 +237,14 @@
         "url": "/evfastcharger/lecturer-e8bb00474cc4/evfastcharger-lecturer-guide.docx"
       }
     ]
+  },
+  "pumpedstorage": {
+    "manual": "/pumpedstorage/lecturer-2820040d494a/",
+    "docs": [
+      {
+        "title": "One-page guide (Word)",
+        "url": "/pumpedstorage/lecturer-2820040d494a/pumpedstorage-lecturer-guide.docx"
+      }
+    ]
   }
 }
