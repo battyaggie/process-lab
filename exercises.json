@@ -376,6 +376,17 @@
         "internationales-wirtschaftsingenieurwesen",
         "maschinenbau"
       ]
+    },
+    {
+      "id": "bioreactor",
+      "title": "Growing microorganisms: a stirred-tank bioreactor",
+      "summary": "Bioreactor, seven stations.",
+      "path": "/bioreactor/",
+      "stations": 7,
+      "programmes": [
+        "nachhaltige-umwelt-und-bioprozesstechnik",
+        "biomedical-engineering"
+      ]
     }
   ]
 }

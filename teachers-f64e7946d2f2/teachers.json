@@ -273,5 +273,14 @@
         "url": "/kanbanloop/lecturer-e13dbe9b39d8/kanbanloop-lecturer-guide.docx"
       }
     ]
+  },
+  "bioreactor": {
+    "manual": "/bioreactor/lecturer-91e92cacad63/",
+    "docs": [
+      {
+        "title": "One-page guide (Word)",
+        "url": "/bioreactor/lecturer-91e92cacad63/bioreactor-lecturer-guide.docx"
+      }
+    ]
   }
 }
