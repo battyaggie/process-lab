@@ -336,5 +336,14 @@
         "url": "/vpntunnel/lecturer-4883bdf3a7d8/vpntunnel-lecturer-guide.docx"
       }
     ]
+  },
+  "petrecycling": {
+    "manual": "/petrecycling/lecturer-095c04aa627e/",
+    "docs": [
+      {
+        "title": "One-page guide (Word)",
+        "url": "/petrecycling/lecturer-095c04aa627e/petrecycling-lecturer-guide.docx"
+      }
+    ]
   }
 }
