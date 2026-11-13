@@ -463,6 +463,18 @@
         "nachhaltige-umwelt-und-bioprozesstechnik",
         "internationales-wirtschaftsingenieurwesen"
       ]
+    },
+    {
+      "id": "scrumsprint",
+      "title": "One sprint in Scrum",
+      "summary": "Scrum sprint, seven stations.",
+      "path": "/scrumsprint/",
+      "stations": 7,
+      "programmes": [
+        "wirtschaftsinformatik",
+        "informatik",
+        "internationales-wirtschaftsingenieurwesen"
+      ]
     }
   ]
 }

@@ -345,5 +345,14 @@
         "url": "/petrecycling/lecturer-095c04aa627e/petrecycling-lecturer-guide.docx"
       }
     ]
+  },
+  "scrumsprint": {
+    "manual": "/scrumsprint/lecturer-2953c657d9ae/",
+    "docs": [
+      {
+        "title": "One-page guide (Word)",
+        "url": "/scrumsprint/lecturer-2953c657d9ae/scrumsprint-lecturer-guide.docx"
+      }
+    ]
   }
 }
