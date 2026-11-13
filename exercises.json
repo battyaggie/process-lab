@@ -452,6 +452,17 @@
         "informations-und-kommunikationssysteme",
         "informatik"
       ]
+    },
+    {
+      "id": "petrecycling",
+      "title": "Recycling plastic bottles into new pellets",
+      "summary": "PET recycling plant, seven stations.",
+      "path": "/petrecycling/",
+      "stations": 7,
+      "programmes": [
+        "nachhaltige-umwelt-und-bioprozesstechnik",
+        "internationales-wirtschaftsingenieurwesen"
+      ]
     }
   ]
 }

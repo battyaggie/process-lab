@@ -1,0 +1,89 @@
+{
+ "storageKey": "petrecycling-vocab",
+ "pictures": [
+  {
+   "src": "/petrecycling/sheet/view-1.jpg",
+   "label": "View 1",
+   "alt": "Numbered picture of the process, view 1 of 2.",
+   "size": [
+    1100,
+    259
+   ]
+  },
+  {
+   "src": "/petrecycling/sheet/view-2.jpg",
+   "label": "View 2",
+   "alt": "Numbered picture of the process, view 2 of 2.",
+   "size": [
+    1100,
+    259
+   ]
+  }
+ ],
+ "parts": [
+  {
+   "n": 1,
+   "name": "Bale breaker"
+  },
+  {
+   "n": 2,
+   "name": "Near-infrared sorter"
+  },
+  {
+   "n": 3,
+   "name": "Shredder"
+  },
+  {
+   "n": 4,
+   "name": "Hot wash tank"
+  },
+  {
+   "n": 5,
+   "name": "Float-sink tank"
+  },
+  {
+   "n": 6,
+   "name": "Dryer"
+  },
+  {
+   "n": 7,
+   "name": "Extruder"
+  },
+  {
+   "n": 8,
+   "name": "Melt filter"
+  },
+  {
+   "n": 9,
+   "name": "Cooling bath"
+  },
+  {
+   "n": 10,
+   "name": "Pelletizer"
+  },
+  {
+   "n": 11,
+   "name": "Silo"
+  }
+ ],
+ "wordBoxOrder": [
+  "Melt filter",
+  "Shredder",
+  "Pelletizer",
+  "Float-sink tank",
+  "Bale breaker",
+  "Silo",
+  "Dryer",
+  "Near-infrared sorter",
+  "Cooling bath",
+  "Hot wash tank",
+  "Extruder"
+ ],
+ "detail": {
+  "text": "Here you can see the steps in more detail. These pictures show the stations of the video. Check that you can find every numbered part in the stations.",
+  "images": [
+   "/petrecycling/sheet/page-2.jpg"
+  ],
+  "alt": "Pictures of the stations of the video, with the numbered parts listed for each station."
+ }
+}
