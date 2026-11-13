@@ -387,6 +387,17 @@
         "nachhaltige-umwelt-und-bioprozesstechnik",
         "biomedical-engineering"
       ]
+    },
+    {
+      "id": "helmetimpacttest",
+      "title": "Testing a bicycle helmet: the EN 1078 impact test",
+      "summary": "Helmet impact test, six stations.",
+      "path": "/helmetimpacttest/",
+      "stations": 6,
+      "programmes": [
+        "human-factors-and-sports-engineering",
+        "maschinenbau"
+      ]
     }
   ]
 }

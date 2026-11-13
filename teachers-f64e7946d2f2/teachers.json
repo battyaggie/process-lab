@@ -282,5 +282,14 @@
         "url": "/bioreactor/lecturer-91e92cacad63/bioreactor-lecturer-guide.docx"
       }
     ]
+  },
+  "helmetimpacttest": {
+    "manual": "/helmetimpacttest/lecturer-1db18c196a6e/",
+    "docs": [
+      {
+        "title": "One-page guide (Word)",
+        "url": "/helmetimpacttest/lecturer-1db18c196a6e/helmetimpacttest-lecturer-guide.docx"
+      }
+    ]
   }
 }
