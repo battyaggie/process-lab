@@ -398,6 +398,17 @@
         "human-factors-and-sports-engineering",
         "maschinenbau"
       ]
+    },
+    {
+      "id": "iotdatapath",
+      "title": "From sensor to dashboard: the data path in a smart building",
+      "summary": "IoT data path, seven stations.",
+      "path": "/iotdatapath/",
+      "stations": 7,
+      "programmes": [
+        "elektronik",
+        "informations-und-kommunikationssysteme"
+      ]
     }
   ]
 }

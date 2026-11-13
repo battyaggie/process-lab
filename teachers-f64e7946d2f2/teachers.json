@@ -291,5 +291,14 @@
         "url": "/helmetimpacttest/lecturer-1db18c196a6e/helmetimpacttest-lecturer-guide.docx"
       }
     ]
+  },
+  "iotdatapath": {
+    "manual": "/iotdatapath/lecturer-50d75168eb5f/",
+    "docs": [
+      {
+        "title": "One-page guide (Word)",
+        "url": "/iotdatapath/lecturer-50d75168eb5f/iotdatapath-lecturer-guide.docx"
+      }
+    ]
   }
 }
