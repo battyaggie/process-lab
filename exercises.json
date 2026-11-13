@@ -420,6 +420,17 @@
         "wirtschaftsinformatik",
         "informatik"
       ]
+    },
+    {
+      "id": "biogasplant",
+      "title": "Making electricity and heat from waste: a biogas plant",
+      "summary": "Biogas plant, six stations.",
+      "path": "/biogasplant/",
+      "stations": 6,
+      "programmes": [
+        "erneuerbare-energien",
+        "nachhaltige-umwelt-und-bioprozesstechnik"
+      ]
     }
   ]
 }

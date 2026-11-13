@@ -309,5 +309,14 @@
         "url": "/etldashboard/lecturer-52c9e804db36/etldashboard-lecturer-guide.docx"
       }
     ]
+  },
+  "biogasplant": {
+    "manual": "/biogasplant/lecturer-611822be07c2/",
+    "docs": [
+      {
+        "title": "One-page guide (Word)",
+        "url": "/biogasplant/lecturer-611822be07c2/biogasplant-lecturer-guide.docx"
+      }
+    ]
   }
 }
