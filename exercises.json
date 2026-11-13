@@ -441,6 +441,17 @@
       "programmes": [
         "informatik"
       ]
+    },
+    {
+      "id": "vpntunnel",
+      "title": "Working from home through a VPN",
+      "summary": "VPN connection, six stations.",
+      "path": "/vpntunnel/",
+      "stations": 6,
+      "programmes": [
+        "informations-und-kommunikationssysteme",
+        "informatik"
+      ]
     }
   ]
 }

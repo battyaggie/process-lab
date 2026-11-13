@@ -327,5 +327,14 @@
         "url": "/compilingprogram/lecturer-e14f61fdaae6/compilingprogram-lecturer-guide.docx"
       }
     ]
+  },
+  "vpntunnel": {
+    "manual": "/vpntunnel/lecturer-4883bdf3a7d8/",
+    "docs": [
+      {
+        "title": "One-page guide (Word)",
+        "url": "/vpntunnel/lecturer-4883bdf3a7d8/vpntunnel-lecturer-guide.docx"
+      }
+    ]
   }
 }
