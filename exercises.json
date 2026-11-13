@@ -431,6 +431,16 @@
         "erneuerbare-energien",
         "nachhaltige-umwelt-und-bioprozesstechnik"
       ]
+    },
+    {
+      "id": "compilingprogram",
+      "title": "From source code to a running program",
+      "summary": "Compiling a program, six stations.",
+      "path": "/compilingprogram/",
+      "stations": 6,
+      "programmes": [
+        "informatik"
+      ]
     }
   ]
 }

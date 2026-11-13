@@ -318,5 +318,14 @@
         "url": "/biogasplant/lecturer-611822be07c2/biogasplant-lecturer-guide.docx"
       }
     ]
+  },
+  "compilingprogram": {
+    "manual": "/compilingprogram/lecturer-e14f61fdaae6/",
+    "docs": [
+      {
+        "title": "One-page guide (Word)",
+        "url": "/compilingprogram/lecturer-e14f61fdaae6/compilingprogram-lecturer-guide.docx"
+      }
+    ]
   }
 }
