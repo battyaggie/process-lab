@@ -300,5 +300,14 @@
         "url": "/iotdatapath/lecturer-50d75168eb5f/iotdatapath-lecturer-guide.docx"
       }
     ]
+  },
+  "etldashboard": {
+    "manual": "/etldashboard/lecturer-52c9e804db36/",
+    "docs": [
+      {
+        "title": "One-page guide (Word)",
+        "url": "/etldashboard/lecturer-52c9e804db36/etldashboard-lecturer-guide.docx"
+      }
+    ]
   }
 }

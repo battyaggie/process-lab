@@ -409,6 +409,17 @@
         "elektronik",
         "informations-und-kommunikationssysteme"
       ]
+    },
+    {
+      "id": "etldashboard",
+      "title": "From many data sources to one dashboard: an ETL process",
+      "summary": "ETL dashboard, seven stations.",
+      "path": "/etldashboard/",
+      "stations": 7,
+      "programmes": [
+        "wirtschaftsinformatik",
+        "informatik"
+      ]
     }
   ]
 }

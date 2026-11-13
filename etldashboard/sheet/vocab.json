@@ -1,0 +1,89 @@
+{
+ "storageKey": "etldashboard-vocab",
+ "pictures": [
+  {
+   "src": "/etldashboard/sheet/view-1.jpg",
+   "label": "View 1",
+   "alt": "Numbered picture of the process, view 1 of 2.",
+   "size": [
+    1100,
+    457
+   ]
+  },
+  {
+   "src": "/etldashboard/sheet/view-2.jpg",
+   "label": "View 2",
+   "alt": "Numbered picture of the process, view 2 of 2.",
+   "size": [
+    1100,
+    457
+   ]
+  }
+ ],
+ "parts": [
+  {
+   "n": 1,
+   "name": "ERP system"
+  },
+  {
+   "n": 2,
+   "name": "CRM system"
+  },
+  {
+   "n": 3,
+   "name": "CSV files"
+  },
+  {
+   "n": 4,
+   "name": "Scheduler"
+  },
+  {
+   "n": 5,
+   "name": "Connectors"
+  },
+  {
+   "n": 6,
+   "name": "Staging area"
+  },
+  {
+   "n": 7,
+   "name": "ETL engine"
+  },
+  {
+   "n": 8,
+   "name": "Data quality check"
+  },
+  {
+   "n": 9,
+   "name": "Data warehouse"
+  },
+  {
+   "n": 10,
+   "name": "Data mart"
+  },
+  {
+   "n": 11,
+   "name": "Dashboard"
+  }
+ ],
+ "wordBoxOrder": [
+  "Data mart",
+  "Connectors",
+  "Scheduler",
+  "Dashboard",
+  "CSV files",
+  "Data warehouse",
+  "ETL engine",
+  "ERP system",
+  "Staging area",
+  "Data quality check",
+  "CRM system"
+ ],
+ "detail": {
+  "text": "Here you can see the steps in more detail. These pictures show the stations of the video. Check that you can find every numbered part in the stations.",
+  "images": [
+   "/etldashboard/sheet/page-2.jpg"
+  ],
+  "alt": "Pictures of the stations of the video, with the numbered parts listed for each station."
+ }
+}
